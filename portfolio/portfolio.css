@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sail&display=swap');
+:root{
+    --font-family:poppins,serif;
+}
 *{
     margin: 0;
     padding: 0;
@@ -56,7 +59,7 @@ nav li a{
     color: white;
     text-decoration: none;
     font-size: 18px;
-    font-family: popppins, sans-serif;
+    font-family: var(--font-family);
     align-items: center;
 }
 #intro{
@@ -69,25 +72,25 @@ nav li a{
     padding: 30px;
     margin-top: 60px;
 }
-#intro div h1,h2{
+#intro div h1,#intro div h2{
     color: white;
-    font-family: poppins,sans-serif;
+    font-family: var(--font-family);
     font-size: 35px;
     padding: 10px;
 }
 #intro div p{
     color: white;
     padding:20px;
-    /* width: 70%; */
     line-height: 25px;
     margin-top: 50px;
-    font-family: poppins, sans-serif;
+    font-family: var(--font-family);
     letter-spacing: 2px;
 }
 #intro div h1 span{
     color: red;
-    font-family: sail,Arial, Helvetica, sans-serif;
+    font-family: sail;
     font-size: 40px;
+    padding: 7px;
 }
 #intro div span {
 color: red;
@@ -120,21 +123,113 @@ color: red;
     position: absolute;
     border-top: 8px solid red;
     border-left: 8px solid red;
-    right: 30px;
+    right: 26px;
     transform: rotate(180deg);
-    bottom: 40px;
+    bottom: 54px;
 }
-button{
+#button{
     height: 45px;
     width: 140px;
-    font-family: poppins,Arial, Helvetica, sans-serif;
+    font-family: var(--font-family);
     background-color: red;
     border: none;
     border-radius: 20px;
     color: white;
     margin-left: 50px;
 }
-button:hover{
+#button:hover{
     background-color: #2423239f;
-    
+}
+#about{
+    background-color: black;
+    height: 100vh;
+}
+.container{
+    margin-left: 10px;
+    padding: 70px 15px 15px 15px ;
+    color: white;
+}
+#about .container h1{
+    font-family: var(--font-family);
+    font-size: 35px;
+    position: relative;
+}
+#about .container h1:after{
+    content: "";
+    position: absolute;
+    width: 65px;
+    height: 16px;
+    bottom: -20px;
+    left: 0;
+    border-top: 4px solid #FF9900;
+    border-bottom: 4px solid #FF9900;
+}
+#about .container #some h3{
+font-size: 25px;
+margin-top: 70px;
+font-family: var(--font-family);
+}
+#about .container #some h3 span{
+color: #FF9900;
+}
+#about .container p{
+    margin-top: 8px;
+    font-family: var(--font-family);
+}
+#infos{
+    display: flex;
+    margin-top: 50px;
+}
+#infos>div{
+    position: relative;
+}
+#infos>div:nth-child(2){
+margin-left: 70px;
+}
+#infos .info{
+    padding: 15px;
+    font-family: var(--font-family);
+    font-size: 16px;
+}
+#infos .info:after{
+    content: "";
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 289px;
+    height: 2px;
+    border-radius: 5px;
+}
+#infos .info span{
+    margin-left: 10px;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+}
+#infos>div:nth-child(3){
+    margin-left: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+#infos>div:nth-child(3) h2{
+    font-family: var(--font-family);
+    font-size: 25px;
+}
+#infos>div:nth-child(3) h4{
+    font-family: var(--font-family);
+    font-size: 20px;
+    color: #FF9900;
+}
+.button{
+    padding: 6px 20px;
+    color: white;
+    font-family: var(--font-family);
+    background-color: #FF9900;
+    border: none;
+    border-radius: 12px;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.button:hover{
+    background-color: #f8a72e;
 }
