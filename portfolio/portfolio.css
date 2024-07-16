@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Sail&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&display=swap');
 :root{
     --font-family:poppins,serif;
 }
@@ -14,18 +14,18 @@ body{
     grid-template-columns:  0.6fr 2fr;
 }
 nav{
-    height: 100vh;
+    height: 140vh;
     background-color: #242323;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 10px;
 }
-#menu{
+.menu{
     display: flex;
     flex-direction: column;
 }
-#menu div::after{
+.menu div::after{
     content: "";
     position: absolute;
     background: rgba(255, 255, 255, 0.7);
@@ -36,7 +36,7 @@ nav{
     top: 50px;
     border-radius: 10px;
 }
-#menu div{
+.menu div{
     margin: 13px;
     position: relative;
     padding: 15px;
@@ -64,7 +64,7 @@ nav li a{
 }
 #intro{
     background-color: black;
-    height: 100vh;
+    height: 140vh;
     display: grid;
     grid-template-columns: 2fr 1fr;
 }
@@ -88,7 +88,8 @@ nav li a{
 }
 #intro div h1 span{
     color: red;
-    font-family: sail;
+    font-family:"Clicker Script", cursive;
+    font-weight: 500;
     font-size: 40px;
     padding: 7px;
 }
@@ -125,24 +126,24 @@ color: red;
     border-left: 8px solid red;
     right: 26px;
     transform: rotate(180deg);
-    bottom: 54px;
+    bottom: 140px;
 }
 #button{
-    height: 45px;
-    width: 140px;
     font-family: var(--font-family);
     background-color: red;
     border: none;
     border-radius: 20px;
     color: white;
-    margin-left: 50px;
+    margin-left: 20px;
+    padding: 11px;
+    margin-top: 20px;
 }
 #button:hover{
     background-color: #2423239f;
 }
 #about{
     background-color: black;
-    height: 100vh;
+    height: 140vh;
 }
 .container{
     margin-left: 10px;
@@ -154,15 +155,11 @@ color: red;
     font-size: 35px;
     position: relative;
 }
+#about .container h1:before{
+    background-color: #FF9900;
+}
 #about .container h1:after{
-    content: "";
-    position: absolute;
-    width: 65px;
-    height: 16px;
-    bottom: -20px;
-    left: 0;
-    border-top: 4px solid #FF9900;
-    border-bottom: 4px solid #FF9900;
+    background-color:#FF9900 ;
 }
 #about .container #some h3{
 font-size: 25px;
@@ -220,7 +217,7 @@ margin-left: 70px;
     color: #FF9900;
 }
 .button{
-    padding: 6px 20px;
+    padding: 11px 28px;
     color: white;
     font-family: var(--font-family);
     background-color: #FF9900;
@@ -232,4 +229,160 @@ margin-left: 70px;
 }
 .button:hover{
     background-color: #f8a72e;
+}
+/* for porfoli */
+#project{
+    background-color: black;
+    height: 140vh;
+
+}
+#project .container div:first-child{
+    font-family: var(--font-family);
+}
+#project .container div:first-child  h1{
+    font-size: 35px;
+    font-weight: 500;
+    position: relative;
+}
+.line::after{
+    content: "";
+    position: absolute;
+    background-color: #0029FF;
+    height: 3px;
+    width: 40px;
+    left: 0;
+    top: 60px;
+}
+.line::before{
+    content: "";
+    position: absolute;
+    background-color: #0029FF;
+    height: 3px;
+    width: 60px;
+    top: 48px;
+}
+#project .container div:first-child  h4{
+    font-size: 25px;
+    font-weight: 350;
+    margin-top: 40px;
+}
+#group{
+    margin-top: 20px;
+}
+#group div{
+    margin-left: 50px;
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+}
+#group .img{
+    width: 50%;
+    height: 50%;
+}
+#group .pros{
+    object-fit: contain;
+    border: 4px solid #0029FF;
+}
+ /* contact start  */
+ #contact{
+    height: 140vh;
+    background-color: #000000;
+ }
+ #contact h1{
+    font-size: 35px;
+    font-family: var(--font-family);
+    position: relative;
+ }
+ #contact h1::before{
+    background-color: #00FF47;
+}
+#contact h1::after{
+    background-color: #00FF47;
+}
+#contact .container>div:nth-child(2){
+    font-family: var(--font-family);
+    margin-top: 50px;
+    text-align: center;
+    text-transform: uppercase;
+}
+#contact .container div:nth-child(2) h3{
+    font-size: 30px;
+    font-weight: 500;
+    color: #00FF47;
+}
+#contact .container>div:nth-child(2) p{
+    font-size: 18px;
+}
+#details{
+    display: flex;
+    margin-top: 70px;
+    justify-content: space-around;
+    align-items: center;
+}
+#details div{
+    font-family: var(--font-family);
+    text-align: center;
+}
+#details div i{
+    font-size: 28px;
+    color: #00FF47;
+}
+#details div h5{
+    font-weight: 500;
+    margin-top: 10px;
+    font-size: 18px;
+}
+#details div p{
+    margin-top: 5px;
+    text-align: left;
+    color: rgba(255, 255, 255, 0.507);
+    font-size: 14px;
+}
+#email {
+    text-align: center;
+    margin-top: 50px;
+}
+#email div:first-child{
+    font-family: var(--font-family);
+}
+#email div:first-child h3{
+    font-size: 20px;
+    font-weight: 600;
+    color: #00FF47;
+}
+#email div:first-child p{
+    margin-top: 10px;
+}
+#email  form{
+    margin-top: 50px;
+}
+#email  form input::placeholder,textarea::placeholder{
+    font-family: var(--font-family);
+    color: #999999;
+}
+#email form input,#email form textarea{
+    text-align: center;
+    width: 34%;
+    margin-top: 17px;
+    padding: 7px;
+    margin-left: 10px;
+    border-radius: 20px;
+    border: none;
+    background-color: #242323;
+}
+#email form input:nth-child(3){
+    width: 70%;
+    padding: 10px;
+}
+#email form textarea{
+    width: 70%;
+    display: block;
+    margin-left: 140px;
+    padding: 15px;
+}
+#email form input[type="submit"]{
+    color: #ffffff;
+    width: 10%;
+    font-family: var(--font-family);
+    background-color: #309b4e;
 }
