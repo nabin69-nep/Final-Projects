@@ -13,8 +13,9 @@ body{
     gap: 1px;
     grid-template-columns:  0.6fr 2fr;
 }
+/*home start*/
 nav{
-    height: 140vh;
+    min-height: 130vh;
     background-color: #242323;
     display: flex;
     align-items: center;
@@ -46,10 +47,6 @@ nav div img{
     width: 29px;
     margin-right: 10px;
 }
-nav div:nth-child(4) img{
-    height: 23px;
-    width: 23px;
-}
 nav li{
     list-style-type: none;
 }
@@ -64,9 +61,10 @@ nav li a{
 }
 #intro{
     background-color: black;
-    height: 140vh;
+    min-height: 130vh;
     display: grid;
     grid-template-columns: 2fr 1fr;
+    grid-template-rows: 80vh;
 }
 #intro div {
     padding: 30px;
@@ -89,7 +87,7 @@ nav li a{
 #intro div h1 span{
     color: red;
     font-family:"Clicker Script", cursive;
-    font-weight: 500;
+    letter-spacing: 5px;
     font-size: 40px;
     padding: 7px;
 }
@@ -126,7 +124,7 @@ color: red;
     border-left: 8px solid red;
     right: 26px;
     transform: rotate(180deg);
-    bottom: 140px;
+    bottom: 25px;
 }
 #button{
     font-family: var(--font-family);
@@ -141,9 +139,12 @@ color: red;
 #button:hover{
     background-color: #2423239f;
 }
+/*home ends*/
+
+/*about start*/
 #about{
     background-color: black;
-    height: 140vh;
+    min-height: 130vh;
 }
 .container{
     margin-left: 10px;
@@ -216,24 +217,29 @@ margin-left: 70px;
     font-size: 20px;
     color: #FF9900;
 }
-.button{
-    padding: 11px 28px;
+.button,#dwn_btn{
+    padding: 13px 31px;
     color: white;
     font-family: var(--font-family);
     background-color: #FF9900;
     border: none;
-    border-radius: 12px;
+    border-radius: 20px;
     text-align: center;
-    margin-top: 20px;
-    margin-left: 20px;
+    margin-top: 50px;
+    margin-left: 30px;
 }
-.button:hover{
+#dwn_btn{
+   text-decoration: none;
+}
+.button:hover,#dwn_btn:hover{
     background-color: #f8a72e;
 }
+/* about end*/
+
 /* for porfoli */
 #project{
     background-color: black;
-    height: 140vh;
+    min-height: 130vh;
 
 }
 #project .container div:first-child{
@@ -264,28 +270,30 @@ margin-left: 70px;
 #project .container div:first-child  h4{
     font-size: 25px;
     font-weight: 350;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 #group{
-    margin-top: 20px;
-}
-#group div{
-    margin-left: 50px;
     display: flex;
-    gap: 30px;
-    margin-top: 20px;
+    flex-wrap: wrap;
+    align-items: center;
 }
-#group .img{
-    width: 50%;
-    height: 50%;
+#group>div{
+    position: relative;
 }
-#group .pros{
-    object-fit: contain;
-    border: 4px solid #0029FF;
+#group a img{
+    margin-left: 20px;
+    margin-top: 11px;
+    border: 3px solid #0029FF;
+    width: 417px;
+    height: 298px;
+    object-fit: cover;
+    position: relative;
 }
+/*portfolio end*/
+
  /* contact start  */
  #contact{
-    height: 140vh;
+    min-height: 130vh;
     background-color: #000000;
  }
  #contact h1{
@@ -369,20 +377,23 @@ margin-left: 70px;
     border-radius: 20px;
     border: none;
     background-color: #242323;
+    color: white;
 }
-#email form input:nth-child(3){
+#email #subject{
     width: 70%;
     padding: 10px;
 }
 #email form textarea{
     width: 70%;
-    display: block;
-    margin-left: 140px;
-    padding: 15px;
+    padding: 20px;
+    resize: vertical;
+    overflow: hidden;
 }
 #email form input[type="submit"]{
     color: #ffffff;
     width: 10%;
     font-family: var(--font-family);
     background-color: #309b4e;
+    display: block;
+    margin-left: 160px;
 }

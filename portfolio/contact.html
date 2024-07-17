@@ -66,16 +66,22 @@
                 <h3>SEND ME AN EMAIL</h3>
                 <p>I’M VERY RESPONSIVE TO MESSAGE</p>
             </div>
-            <form action="">
-                <input type="text" name="name" placeholder="Name">
-                <input type="email" name="email" placeholder="Email">
-                <input type="text" name="subject" placeholder="Subject">
-                <textarea name="message" placeholder="Message"></textarea>
+            <!-- https://formspree.io/f/meojopvn -->
+            <form action="" method="post" id="form">
+                <input type="text" name="name" placeholder="Name" id="name">
+                <span id="name_error" style="color: rgb(236, 70, 70);"></span>
+                <input type="email" name="email" placeholder="Email" id="e_mail">
+                <span id="email_error" style="color: rgb(236, 70, 70);"></span>
+                <input type="text" name="subject" placeholder="Subject" id="subject">
+                <span id="sub_error" style="color: rgb(236, 70, 70);"></span>
+                <textarea name="message" placeholder="Message" id="msg"></textarea>
+                <span id="msg_error" style="color: rgb(236, 70, 70);"></span>
                 <input type="submit" name="submit">
             </form>
             </div>
             </div>
             </section>
+            <script src="portfolio.js"></script>
             <script src="https://kit.fontawesome.com/271bb9f87a.js" crossorigin="anonymous"></script>
 </body>
 
