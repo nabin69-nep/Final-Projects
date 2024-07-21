@@ -1,32 +1,66 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Clicker+Script&display=swap');
-:root{
-    --font-family:poppins,serif;
+
+:root {
+    --font-family: poppins, serif;
 }
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     display: grid;
     gap: 1px;
-    grid-template-columns:  0.6fr 2fr;
+    grid-template-columns: 0.6fr 2fr;
 }
+
 /*home start*/
-nav{
+#open{
+    position: absolute;
+    color: white;
+    top: 4%;
+    left: 6%;
+    font-size: 35px;
+    display: none;
+}
+#close{
+    font-size: 35px;
+    color: white;
+    position: absolute;
+    right: -45px;
+    top: 20px;
+    display: none;
+}
+nav {
     min-height: 130vh;
     background-color: #242323;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     padding: 10px;
 }
-.menu{
+#bg{
+    display: none;
+
+}
+.menu {
     display: flex;
     flex-direction: column;
+    margin-top: 50%;
 }
-.menu div::after{
+
+.foot {
+    font-family: var(--font-family);
+    color: white;
+    margin-top: auto;
+    text-align: center;
+}
+
+.menu div::after {
     content: "";
     position: absolute;
     background: rgba(255, 255, 255, 0.7);
@@ -37,20 +71,24 @@ nav{
     top: 50px;
     border-radius: 10px;
 }
-.menu div{
+
+.menu div {
     margin: 13px;
     position: relative;
     padding: 15px;
 }
-nav div img{
+
+nav div img {
     height: 29px;
     width: 29px;
     margin-right: 10px;
 }
-nav li{
+
+nav li {
     list-style-type: none;
 }
-nav li a{
+
+nav li a {
     justify-content: flex-start;
     display: flex;
     color: white;
@@ -59,74 +97,85 @@ nav li a{
     font-family: var(--font-family);
     align-items: center;
 }
-#intro{
+
+#intro {
     background-color: black;
     min-height: 130vh;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: 80vh;
+    display: flex;
+    align-items: flex-start;
 }
+
 #intro div {
     padding: 30px;
     margin-top: 60px;
 }
-#intro div h1,#intro div h2{
+
+#intro div h1,
+#intro div h2 {
     color: white;
     font-family: var(--font-family);
     font-size: 35px;
     padding: 10px;
 }
-#intro div p{
+
+#intro div p {
     color: white;
-    padding:20px;
+    padding: 20px;
     line-height: 25px;
     margin-top: 50px;
     font-family: var(--font-family);
     letter-spacing: 2px;
 }
-#intro div h1 span{
+
+#intro div h1 span {
     color: red;
-    font-family:"Clicker Script", cursive;
+    font-family: "Clicker Script", cursive;
     letter-spacing: 5px;
     font-size: 40px;
     padding: 7px;
 }
+
 #intro div span {
-color: red;
+    color: red;
 }
-#intro div:nth-child(2) img{
-    width: 336px;
-    height: 314px;
-    object-fit:scale-down;
-    margin-top: 50px;
-    position: relative;
+
+#intro div:nth-child(2) img {
+    width: 300px;
+    height: 300px;
+    object-fit: scale-down;
+    /* margin-top: 50px; */
 }
-#intro div:nth-child(2){
+
+#intro div:nth-child(2) {
     padding: 20px;
     position: relative;
+    /* margin-bottom: 30%; */
 }
-#intro div:nth-child(2)::before{
+
+#intro div:nth-child(2)::before {
     content: "";
     height: 80px;
     width: 80px;
     position: absolute;
-    left: 20px;
-    top: 30px;
+    left: 9%;
+    top: 0%;
     border-top: 8px solid red;
     border-left: 8px solid red;
 }
-#intro div:nth-child(2)::after{
+
+#intro div:nth-child(2)::after {
     content: "";
     height: 80px;
     width: 80px;
     position: absolute;
     border-top: 8px solid red;
     border-left: 8px solid red;
-    right: 26px;
+    right: 9%;
     transform: rotate(180deg);
-    bottom: 25px;
+    bottom: 0%;
 }
-#button{
+
+#button {
     font-family: var(--font-family);
     background-color: red;
     border: none;
@@ -136,60 +185,74 @@ color: red;
     padding: 11px;
     margin-top: 20px;
 }
-#button:hover{
+
+#button:hover {
     background-color: #2423239f;
 }
+
 /*home ends*/
 
 /*about start*/
-#about{
+#about {
     background-color: black;
     min-height: 130vh;
 }
-.container{
+
+.container {
     margin-left: 10px;
-    padding: 70px 15px 15px 15px ;
+    padding: 50px 15px 15px 15px;
     color: white;
 }
-#about .container h1{
+
+#about .container h1 {
     font-family: var(--font-family);
     font-size: 35px;
     position: relative;
 }
-#about .container h1:before{
+
+#about .container h1:before {
     background-color: #FF9900;
 }
-#about .container h1:after{
-    background-color:#FF9900 ;
+
+#about .container h1:after {
+    background-color: #FF9900;
 }
-#about .container #some h3{
-font-size: 25px;
-margin-top: 70px;
-font-family: var(--font-family);
+
+#about .container #some h3 {
+    font-size: 25px;
+    margin-top: 70px;
+    font-family: var(--font-family);
 }
-#about .container #some h3 span{
-color: #FF9900;
+
+#about .container #some h3 span {
+    color: #FF9900;
 }
-#about .container p{
+
+#about .container p {
     margin-top: 8px;
     font-family: var(--font-family);
 }
-#infos{
+
+#infos {
     display: flex;
     margin-top: 50px;
 }
-#infos>div{
+
+#infos>div {
     position: relative;
 }
-#infos>div:nth-child(2){
-margin-left: 70px;
+
+#infos>div:nth-child(2) {
+    margin-left: 70px;
 }
-#infos .info{
+
+#infos .info {
     padding: 15px;
     font-family: var(--font-family);
     font-size: 16px;
 }
-#infos .info:after{
+
+#infos .info:after {
     content: "";
     position: absolute;
     background-color: rgba(255, 255, 255, 0.7);
@@ -197,27 +260,33 @@ margin-left: 70px;
     height: 2px;
     border-radius: 5px;
 }
-#infos .info span{
+
+#infos .info span {
     margin-left: 10px;
     color: rgba(255, 255, 255, 0.5);
     font-size: 14px;
 }
-#infos>div:nth-child(3){
+
+#infos>div:nth-child(3) {
     margin-left: 80px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
 }
-#infos>div:nth-child(3) h2{
+
+#infos>div:nth-child(3) h2 {
     font-family: var(--font-family);
     font-size: 25px;
 }
-#infos>div:nth-child(3) h4{
+
+#infos>div:nth-child(3) h4 {
     font-family: var(--font-family);
     font-size: 20px;
     color: #FF9900;
 }
-.button,#dwn_btn{
+
+.button,
+#dwn_btn {
     padding: 13px 31px;
     color: white;
     font-family: var(--font-family);
@@ -228,29 +297,36 @@ margin-left: 70px;
     margin-top: 50px;
     margin-left: 30px;
 }
-#dwn_btn{
-   text-decoration: none;
+
+#dwn_btn {
+    text-decoration: none;
 }
-.button:hover,#dwn_btn:hover{
+
+.button:hover,
+#dwn_btn:hover {
     background-color: #f8a72e;
 }
+
 /* about end*/
 
 /* for porfoli */
-#project{
+#project {
     background-color: black;
     min-height: 130vh;
 
 }
-#project .container div:first-child{
+
+#project .container div:first-child {
     font-family: var(--font-family);
 }
-#project .container div:first-child  h1{
+
+#project .container div:first-child h1 {
     font-size: 35px;
     font-weight: 500;
     position: relative;
 }
-.line::after{
+
+.line::after {
     content: "";
     position: absolute;
     background-color: #0029FF;
@@ -259,7 +335,8 @@ margin-left: 70px;
     left: 0;
     top: 60px;
 }
-.line::before{
+
+.line::before {
     content: "";
     position: absolute;
     background-color: #0029FF;
@@ -267,108 +344,128 @@ margin-left: 70px;
     width: 60px;
     top: 48px;
 }
-#project .container div:first-child  h4{
+
+#project .container div:first-child h4 {
     font-size: 25px;
     font-weight: 350;
-    margin-top: 20px;
+    margin-top: 35px;
 }
-#group{
+
+#group {
     display: flex;
-    flex-wrap: wrap;
+    margin-top: 8px;
     align-items: center;
 }
-#group>div{
-    position: relative;
-}
-#group a img{
+
+#group a img {
     margin-left: 20px;
-    margin-top: 11px;
+    margin-top: 20px;
     border: 3px solid #0029FF;
-    width: 417px;
-    height: 298px;
+    width: 90%;
+    height: 240px;
     object-fit: cover;
-    position: relative;
 }
+
 /*portfolio end*/
 
- /* contact start  */
- #contact{
+/* contact start  */
+#contact {
     min-height: 130vh;
     background-color: #000000;
- }
- #contact h1{
+}
+
+#contact h1 {
     font-size: 35px;
     font-family: var(--font-family);
     position: relative;
- }
- #contact h1::before{
+}
+
+#contact h1::before {
     background-color: #00FF47;
 }
-#contact h1::after{
+
+#contact h1::after {
     background-color: #00FF47;
 }
-#contact .container>div:nth-child(2){
+
+#contact .container>div:nth-child(2) {
     font-family: var(--font-family);
-    margin-top: 50px;
+    margin-top: 30px;
     text-align: center;
     text-transform: uppercase;
 }
-#contact .container div:nth-child(2) h3{
+
+#contact .container div:nth-child(2) h3 {
     font-size: 30px;
     font-weight: 500;
     color: #00FF47;
 }
-#contact .container>div:nth-child(2) p{
+
+#contact .container>div:nth-child(2) p {
     font-size: 18px;
 }
-#details{
+
+#details {
     display: flex;
-    margin-top: 70px;
+    margin-top: 30px;
     justify-content: space-around;
     align-items: center;
 }
-#details div{
+
+#details div {
     font-family: var(--font-family);
     text-align: center;
 }
-#details div i{
+
+#details div i {
     font-size: 28px;
     color: #00FF47;
 }
-#details div h5{
+
+#details div h5 {
     font-weight: 500;
     margin-top: 10px;
     font-size: 18px;
 }
-#details div p{
+
+#details div p {
     margin-top: 5px;
     text-align: left;
     color: rgba(255, 255, 255, 0.507);
     font-size: 14px;
 }
+
 #email {
     text-align: center;
-    margin-top: 50px;
+    margin-top: 20px;
 }
-#email div:first-child{
+
+#email div:first-child {
     font-family: var(--font-family);
 }
-#email div:first-child h3{
+
+#email div:first-child h3 {
     font-size: 20px;
     font-weight: 600;
     color: #00FF47;
 }
-#email div:first-child p{
+
+#email div:first-child p {
     margin-top: 10px;
 }
-#email  form{
-    margin-top: 50px;
+
+#email form {
+    margin-top: 30px;
 }
-#email  form input::placeholder,textarea::placeholder{
+
+#email form input::placeholder,
+textarea::placeholder {
     font-family: var(--font-family);
     color: #999999;
 }
-#email form input,#email form textarea{
+
+#email form input,
+#email form textarea {
     text-align: center;
     width: 34%;
     margin-top: 17px;
@@ -379,17 +476,20 @@ margin-left: 70px;
     background-color: #242323;
     color: white;
 }
-#email #subject{
+
+#email #subject {
     width: 70%;
     padding: 10px;
 }
-#email form textarea{
+
+#email form textarea {
     width: 70%;
     padding: 20px;
     resize: vertical;
     overflow: hidden;
 }
-#email form input[type="submit"]{
+
+#email form input[type="submit"] {
     color: #ffffff;
     width: 10%;
     font-family: var(--font-family);
@@ -397,3 +497,197 @@ margin-left: 70px;
     display: block;
     margin-left: 160px;
 }
+
+/* 768 to 991  tablet  */
+@media(min-width:768px) and (max-width:991px) {
+    body {
+        grid-template-columns: 0.4fr 2fr;
+    }
+    /* main */
+    #intro div:nth-child(2) img {
+        width: 250px;
+        height: 250px;
+    }
+    #intro div h1 span{
+        font-size: 31px;
+        padding: 5px;
+        letter-spacing: 4px;
+    }
+    #intro div h1, #intro div h2 {
+        font-size: 25px;
+        padding: 5px;
+    }
+    #intro div p {
+        padding: 15px;
+        margin-top: 40px;
+        font-size: 14px;
+    }
+    #button {
+        padding: 8px;
+    }
+    #intro div:nth-child(2)::before {
+        border-top: 6px solid red;
+        border-left: 6px solid red;
+        height: 65px;
+        width: 65px;
+    }
+    #intro div:nth-child(2)::after {
+        border-top: 6px solid red;
+        border-left: 6px solid red;
+        height: 65px;
+        width: 65px;
+    }
+    .foot{
+        font-size: 14px;
+    }
+    .menu div {
+        padding: 10px;
+    }
+    nav li a{
+        font-size: 16px;
+    }
+    nav div img {
+        height: 27px;
+        width: 27px;
+    }
+    /* main end  */
+
+    /* portfolio  */
+    #project .container div:first-child h1{
+        font-size: 30px;
+    }
+    #project .container div:first-child h4{
+        font-size: 20px;
+    }
+    #group a img {
+        margin-top: 36px;
+        width: 90%;
+        height: 200px;
+    }
+/* portfolio end  */
+    /* contact */
+    #contact h1 {
+        font-size: 30px;
+    }
+    #contact .container div:nth-child(2) h3{
+        font-size: 25px;
+    }
+#contact .container>div:nth-child(2) p {
+    font-size: 16px;
+}
+#details {
+    margin-top: 25px;
+}
+#details div i {
+    font-size: 25px;
+}
+#details div h5 {
+    font-size: 16px;
+}
+#details div p{
+    font-size: 13px;
+}
+#email div:first-child h3{
+    font-size: 18px;
+}
+#email div:first-child p {
+    font-size: 14px;
+    margin-top: 5px;
+}
+#email form{
+    margin-top: 25px;
+}
+#email form input[type="submit"] {
+    margin-left: 110px;
+}
+/* contact end  */
+}
+/* 0 to 768 for mobile*/
+@media(max-width:768px){
+    body{
+        display: block;
+    }
+    #bg{
+        background-color: #00000034;
+        height: 130vh;
+        position: absolute;
+        width: 100%;
+        z-index: 2;
+        transition: all 0.4s linear;
+        opacity: 0;
+    }
+    #bg.bg{
+        display: block;
+        opacity: 1;
+        /* z-index: 2; */
+    }
+nav{
+        position: absolute;
+        width: 25%;
+        left: -45%;
+        transition: all 0.4s ease-in;
+        z-index: 3;
+    }
+    .come{
+        left: 0;
+    }
+    .foot{
+        font-size: 12px;
+    }
+    .menu div {
+        padding: 7px;
+    }
+    nav li a{
+        font-size: 14px;
+    }
+    nav div img {
+        height: 24px;
+        width: 24px;
+    }
+    #open{
+        display: inline-block;
+    }
+    #close{
+        display: inline-block;
+    }
+    /* main start  */
+    #intro {
+        padding-left: 100px;
+        padding-top: 40px;
+    }
+    #intro div:nth-child(2) img {
+        width: 200px;
+        height: 200px;
+    }
+    #intro div h1 span{
+        font-size: 25px;
+        padding: 4px;
+        letter-spacing: 3px;
+    }
+    #intro div h1, #intro div h2 {
+        font-size: 20px;
+        padding: 4px;
+    }
+    #intro div p {
+        padding: 12px;
+        margin-top: 30px;
+        font-size: 12px;
+    }
+    #button {
+        padding: 6px;
+    }
+    #intro div:nth-child(2)::before {
+        border-top: 5px solid red;
+        border-left: 5px solid red;
+        height: 55px;
+        width: 55px;
+    }
+    #intro div:nth-child(2)::after {
+        border-top: 5px solid red;
+        border-left: 5px solid red;
+        height: 55px;
+        width: 55px;
+    }
+    /* main ends */
+}
+

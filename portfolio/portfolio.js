@@ -1,13 +1,34 @@
+const open=document.querySelector("#open");
+if(!open==""){
+open.addEventListener("click",()=>{
+    document.querySelector("#ham").classList.add("come");
+    bg.classList.add("bg");
+})}
+let close=document.querySelector("#close");
+if(!close==""){
+    close.addEventListener("click",()=>{
+
+        document.querySelector("#ham").classList.remove("come");
+        bg.classList.remove("bg");
+    })
+}
+const bg=document.querySelector("#bg")
+if(!bg==""){
+    bg.addEventListener("click",()=>{
+       document.querySelector("#ham").classList.remove("come");
+        bg.classList.remove("bg"); 
+    })
+}
 const btn=document.querySelector("#button");
 if(!btn==""){
-btn.addEventListener("click",()=>{
-    window.location.href="about.html";
-});
+    btn.addEventListener("click",()=>{
+        window.location.href="about.html";
+    });
 }
 const btn1=document.querySelector("#btn");
 if(!btn1==""){
-btn1.addEventListener("click",()=>{
-    window.location.href="contact.html";
+    btn1.addEventListener("click",()=>{
+        window.location.href="contact.html";
 });
 }
 // form validation
@@ -16,6 +37,7 @@ const name = document.querySelector("#name");
 const email = document.querySelector("#e_mail");
 const subject = document.querySelector("#subject");
 const msg = document.querySelector("#msg");
+if(!form==""){
 form.addEventListener("submit",(e)=>{
     if(name.value==""|| name.value ==null){
         e.preventDefault();
@@ -46,4 +68,11 @@ form.addEventListener("submit",(e)=>{
     else{
         document.querySelector("#email_error").innerText="";
     }
+});
+}
+var typed = new Typed('.typed',{
+    strings: ["Nabin khadka."],
+    typeSpeed: 100,
+    backSpeed:60,
+    loop:true,
 });
