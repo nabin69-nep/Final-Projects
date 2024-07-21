@@ -18,7 +18,7 @@ body {
 }
 
 /*home start*/
-#open{
+#open {
     position: absolute;
     color: white;
     top: 4%;
@@ -26,7 +26,8 @@ body {
     font-size: 35px;
     display: none;
 }
-#close{
+
+#close {
     font-size: 35px;
     color: white;
     position: absolute;
@@ -34,6 +35,7 @@ body {
     top: 20px;
     display: none;
 }
+
 nav {
     min-height: 130vh;
     background-color: #242323;
@@ -43,10 +45,12 @@ nav {
     flex-direction: column;
     padding: 10px;
 }
-#bg{
+
+#bg {
     display: none;
 
 }
+
 .menu {
     display: flex;
     flex-direction: column;
@@ -184,6 +188,7 @@ nav li a {
     margin-left: 20px;
     padding: 11px;
     margin-top: 20px;
+    cursor: pointer;
 }
 
 #button:hover {
@@ -236,14 +241,15 @@ nav li a {
 #infos {
     display: flex;
     margin-top: 50px;
+    margin-left: -2%;
 }
 
-#infos>div {
+/* #infos>div {
     position: relative;
-}
+} */
 
 #infos>div:nth-child(2) {
-    margin-left: 70px;
+    margin-left: 5%;
 }
 
 #infos .info {
@@ -268,7 +274,7 @@ nav li a {
 }
 
 #infos>div:nth-child(3) {
-    margin-left: 80px;
+    margin-left: 2%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -296,6 +302,7 @@ nav li a {
     text-align: center;
     margin-top: 50px;
     margin-left: 30px;
+    cursor: pointer;
 }
 
 #dwn_btn {
@@ -496,6 +503,7 @@ textarea::placeholder {
     background-color: #309b4e;
     display: block;
     margin-left: 160px;
+    cursor: pointer;
 }
 
 /* 768 to 991  tablet  */
@@ -503,191 +511,282 @@ textarea::placeholder {
     body {
         grid-template-columns: 0.4fr 2fr;
     }
+
     /* main */
     #intro div:nth-child(2) img {
         width: 250px;
         height: 250px;
     }
-    #intro div h1 span{
+
+    #intro div h1 span {
         font-size: 31px;
         padding: 5px;
         letter-spacing: 4px;
     }
-    #intro div h1, #intro div h2 {
+
+    #intro div h1,
+    #intro div h2 {
         font-size: 25px;
         padding: 5px;
     }
+
     #intro div p {
         padding: 15px;
         margin-top: 40px;
         font-size: 14px;
     }
+
     #button {
         padding: 8px;
     }
+
     #intro div:nth-child(2)::before {
         border-top: 6px solid red;
         border-left: 6px solid red;
         height: 65px;
         width: 65px;
     }
+
     #intro div:nth-child(2)::after {
         border-top: 6px solid red;
         border-left: 6px solid red;
         height: 65px;
         width: 65px;
     }
-    .foot{
+
+    .foot {
         font-size: 14px;
     }
+
     .menu div {
         padding: 10px;
     }
-    nav li a{
+
+    nav li a {
         font-size: 16px;
     }
+
     nav div img {
         height: 27px;
         width: 27px;
     }
-    /* main end  */
 
-    /* portfolio  */
-    #project .container div:first-child h1{
+    /* main end  */
+    /* about  */
+    #about .container h1 {
         font-size: 30px;
     }
-    #project .container div:first-child h4{
+    #about .container #some h3 {
+        font-size: 20px;
+        margin-top: 50px;
+    }
+    #about .container p{
+        font-size: 14px;
+    }
+    #infos {
+        margin-top: 35px;
+        flex-wrap: wrap;
+    }
+    #infos .info:after{
+        width: 250px;
+    }
+    #infos>div:nth-child(2) {
+        margin-left: 40px;
+    }
+    #infos>div:nth-child(3) {
+        margin-left: 20px;
+        margin-top: 15px;
+    }
+    .info h3{
+        font-size: 16px;
+    }
+    #infos .info span{
+        font-size: 12px;
+    }
+    #infos>div:nth-child(3) h2{
         font-size: 20px;
     }
+    #infos>div:nth-child(3) h4{
+        font-size: 16px;
+    }
+    .button, #dwn_btn {
+        padding: 8px 10px;
+        border-radius: 15px;
+        margin-top: 26px;
+        margin-left: 20px;
+    }
+    /* about end  */
+    /* portfolio  */
+
+    #project .container div:first-child h1 {
+        font-size: 30px;
+    }
+
+    #project .container div:first-child h4 {
+        font-size: 20px;
+    }
+
     #group a img {
         margin-top: 36px;
         width: 90%;
         height: 200px;
     }
-/* portfolio end  */
+
+    /* portfolio end  */
     /* contact */
     #contact h1 {
         font-size: 30px;
     }
-    #contact .container div:nth-child(2) h3{
+
+    #contact .container div:nth-child(2) h3 {
         font-size: 25px;
     }
-#contact .container>div:nth-child(2) p {
-    font-size: 16px;
+
+    #contact .container>div:nth-child(2) p {
+        font-size: 16px;
+    }
+
+    #details {
+        margin-top: 25px;
+    }
+
+    #details div i {
+        font-size: 25px;
+    }
+
+    #details div h5 {
+        font-size: 16px;
+    }
+
+    #details div p {
+        font-size: 13px;
+    }
+
+    #email div:first-child h3 {
+        font-size: 18px;
+    }
+
+    #email div:first-child p {
+        font-size: 14px;
+        margin-top: 5px;
+    }
+
+    #email form {
+        margin-top: 25px;
+    }
+
+    #email form input[type="submit"] {
+        margin-left: 110px;
+    }
+
+    /* contact end  */
 }
-#details {
-    margin-top: 25px;
-}
-#details div i {
-    font-size: 25px;
-}
-#details div h5 {
-    font-size: 16px;
-}
-#details div p{
-    font-size: 13px;
-}
-#email div:first-child h3{
-    font-size: 18px;
-}
-#email div:first-child p {
-    font-size: 14px;
-    margin-top: 5px;
-}
-#email form{
-    margin-top: 25px;
-}
-#email form input[type="submit"] {
-    margin-left: 110px;
-}
-/* contact end  */
-}
+
 /* 0 to 768 for mobile*/
-@media(max-width:768px){
-    body{
+@media(max-width:768px) {
+    body {
         display: block;
     }
-    #bg{
+
+    #bg {
         background-color: #00000034;
         height: 130vh;
         position: absolute;
         width: 100%;
-        z-index: 2;
+        z-index: -1;
         transition: all 0.4s linear;
         opacity: 0;
     }
-    #bg.bg{
+
+    #bg.bg {
         display: block;
         opacity: 1;
-        /* z-index: 2; */
+        z-index: 2;
     }
-nav{
+
+    nav {
         position: absolute;
         width: 25%;
         left: -45%;
         transition: all 0.4s ease-in;
         z-index: 3;
     }
-    .come{
+
+    .come {
         left: 0;
     }
-    .foot{
+
+    .foot {
         font-size: 12px;
     }
+
     .menu div {
         padding: 7px;
     }
-    nav li a{
+
+    nav li a {
         font-size: 14px;
     }
+
     nav div img {
         height: 24px;
         width: 24px;
     }
-    #open{
+
+    #open {
         display: inline-block;
     }
-    #close{
+
+    #close {
         display: inline-block;
     }
+
     /* main start  */
     #intro {
         padding-left: 100px;
         padding-top: 40px;
     }
+
     #intro div:nth-child(2) img {
         width: 200px;
         height: 200px;
     }
-    #intro div h1 span{
+
+    #intro div h1 span {
         font-size: 25px;
         padding: 4px;
         letter-spacing: 3px;
     }
-    #intro div h1, #intro div h2 {
+
+    #intro div h1,
+    #intro div h2 {
         font-size: 20px;
         padding: 4px;
     }
+
     #intro div p {
         padding: 12px;
         margin-top: 30px;
         font-size: 12px;
     }
+
     #button {
         padding: 6px;
     }
+
     #intro div:nth-child(2)::before {
         border-top: 5px solid red;
         border-left: 5px solid red;
         height: 55px;
         width: 55px;
     }
+
     #intro div:nth-child(2)::after {
         border-top: 5px solid red;
         border-left: 5px solid red;
         height: 55px;
         width: 55px;
     }
+
     /* main ends */
 }
-
