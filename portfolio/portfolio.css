@@ -21,10 +21,11 @@ body {
 #open {
     position: absolute;
     color: white;
-    top: 4%;
-    left: 6%;
+    top: 20px;
+    left: 30px;
     font-size: 35px;
     display: none;
+    cursor: pointer;
 }
 
 #close {
@@ -34,6 +35,7 @@ body {
     right: -45px;
     top: 20px;
     display: none;
+    cursor: pointer;
 }
 
 nav {
@@ -576,45 +578,58 @@ textarea::placeholder {
     #about .container h1 {
         font-size: 30px;
     }
+
     #about .container #some h3 {
         font-size: 20px;
         margin-top: 50px;
     }
-    #about .container p{
+
+    #about .container p {
         font-size: 14px;
     }
+
     #infos {
         margin-top: 35px;
         flex-wrap: wrap;
     }
-    #infos .info:after{
+
+    #infos .info:after {
         width: 250px;
     }
+
     #infos>div:nth-child(2) {
         margin-left: 40px;
     }
+
     #infos>div:nth-child(3) {
         margin-left: 20px;
         margin-top: 15px;
     }
-    .info h3{
+
+    .info h3 {
         font-size: 16px;
     }
-    #infos .info span{
+
+    #infos .info span {
         font-size: 12px;
     }
-    #infos>div:nth-child(3) h2{
+
+    #infos>div:nth-child(3) h2 {
         font-size: 20px;
     }
-    #infos>div:nth-child(3) h4{
+
+    #infos>div:nth-child(3) h4 {
         font-size: 16px;
     }
-    .button, #dwn_btn {
+
+    .button,
+    #dwn_btn {
         padding: 8px 10px;
         border-radius: 15px;
         margin-top: 26px;
         margin-left: 20px;
     }
+
     /* about end  */
     /* portfolio  */
 
@@ -682,6 +697,8 @@ textarea::placeholder {
     /* contact end  */
 }
 
+
+
 /* 0 to 768 for mobile*/
 @media(max-width:768px) {
     body {
@@ -706,8 +723,8 @@ textarea::placeholder {
 
     nav {
         position: absolute;
-        width: 25%;
-        left: -45%;
+        width: 150px;
+        left: -200px;
         transition: all 0.4s ease-in;
         z-index: 3;
     }
@@ -743,8 +760,11 @@ textarea::placeholder {
 
     /* main start  */
     #intro {
-        padding-left: 100px;
-        padding-top: 40px;
+        padding-left: 0;
+        padding-top: 20px;
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
     }
 
     #intro div:nth-child(2) img {
@@ -765,13 +785,14 @@ textarea::placeholder {
     }
 
     #intro div p {
-        padding: 12px;
-        margin-top: 30px;
+        padding: 10px;
+        margin-top: 15px;
         font-size: 12px;
     }
 
     #button {
-        padding: 6px;
+        padding: 7px;
+    margin-left: -20px;    
     }
 
     #intro div:nth-child(2)::before {
@@ -787,6 +808,139 @@ textarea::placeholder {
         height: 55px;
         width: 55px;
     }
-
+    #intro div {
+    padding: 15px;
+    margin: 10px;
+    text-align: center;
+    }
+    #intro div:nth-child(2) {
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    }
     /* main ends */
+    /* about start  */
+    #some{
+        text-align: center;
+    }
+    #about .container h1 {
+    font-size: 27px;
+    margin-top: 17px;
+    display: inline-block;
 }
+    .line::before {
+    top: 41px;
+}
+    .line::after {
+    top: 48px;
+}
+#about .container #some h3 {
+    font-size: 20px;
+    margin-top: 30px;
+}
+#about .container p{
+    margin-top: 6px;
+    font-size: 14px;
+}
+#infos>div:nth-child(2){
+    margin-left: 0;
+}
+#infos>div:nth-child(3) {
+    display: flex;
+  margin: 10px auto 5px auto;
+
+}
+#infos {
+    margin-top: 15px;
+    flex-wrap: wrap;
+}
+#infos .info  h3{
+    /* padding: 10px; */
+    font-size: 14px;
+}
+#infos .info span{
+    font-size: 12px;
+}
+#infos .info:after{
+    width: 240px;
+}
+#infos>div:nth-child(3) h2 {
+    font-size: 18px;
+}
+#infos>div:nth-child(3) h4{
+    font-size: 15px;
+}
+.button, #dwn_btn {
+    padding: 8px 10px;
+    border-radius: 15px;
+    margin-top: 40px;
+    margin-left: 20px;
+}
+/* about ends  */
+/* portfolio start  */
+#project .container div:first-child{
+    text-align: center;
+}
+#project .container div:first-child h1 {
+    font-size: 28px;
+    display: inline-block;
+}
+#project .container div:first-child h4 {
+    font-size: 20px;
+    margin-top: 20px;
+}
+#group{
+   display: block;
+}
+#group>div{
+text-align: center;
+}
+.container {
+    margin-left: 0px;
+    padding-right: 0px;
+}
+/* portfolio end  */
+/* contact start  */
+#contact .container div{
+    text-align: center;
+}
+#contact h1 {
+    font-size: 27px;
+    display: inline-block;
+}
+#contact .container div:nth-child(2) h3 {
+    font-size: 20px;
+}
+#contact .container div:nth-child(2) p{
+   font-size: 12px;
+}
+#details{
+    margin-top: 25px;
+    flex-wrap: wrap;
+}
+#details div i {
+    font-size: 20px;
+}
+#details div h5 {
+    margin-top: 7px;
+    font-size: 14px;
+}
+#details div p {
+    font-size: 10px;
+}
+#email div:first-child h3 {
+    font-size: 15px;
+}
+#email div:first-child p {
+    margin-top: 5px;
+    font-size: 12px;
+}
+#email form {
+    margin-top: 15px;
+}
+#email form input[type="submit"] {
+    width: 21%;
+    display: block;
+    margin-left: 130px;
+}
+    }
