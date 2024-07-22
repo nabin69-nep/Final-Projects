@@ -3,6 +3,7 @@ if(!open==""){
 open.addEventListener("click",()=>{
     document.querySelector("#ham").classList.add("come");
     bg.classList.add("bg");
+    document.querySelector("nav").style.position="fixed";
 })}
 let close=document.querySelector("#close");
 if(!close==""){

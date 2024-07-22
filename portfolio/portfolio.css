@@ -103,7 +103,9 @@ nav li a {
     font-family: var(--font-family);
     align-items: center;
 }
-
+nav li a:hover{
+    color: rgb(48, 226, 217);
+}
 #intro {
     background-color: black;
     min-height: 130vh;
@@ -430,7 +432,9 @@ nav li a {
     font-size: 28px;
     color: #00FF47;
 }
-
+#details div i:hover{
+    color:white;
+}
 #details div h5 {
     font-weight: 500;
     margin-top: 10px;
@@ -452,7 +456,6 @@ nav li a {
 #email div:first-child {
     font-family: var(--font-family);
 }
-
 #email div:first-child h3 {
     font-size: 20px;
     font-weight: 600;
@@ -506,6 +509,14 @@ textarea::placeholder {
     display: block;
     margin-left: 160px;
     cursor: pointer;
+}
+#email form input[type="submit"]:hover{
+    background-color: white;
+    color: green;
+}
+#form p{
+    display: inline-block;
+    font-size: 12px;
 }
 
 /* 768 to 991  tablet  */
@@ -687,13 +698,21 @@ textarea::placeholder {
     }
 
     #email form {
-        margin-top: 25px;
+        margin-top: 15px;
     }
 
     #email form input[type="submit"] {
         margin-left: 110px;
     }
-
+    #email form input{
+        width: 70%;
+    }
+    #form p{
+        display: block;
+    }
+    #email form input, #email form textarea {
+        margin-top: 11px;
+    }
     /* contact end  */
 }
 
@@ -707,8 +726,8 @@ textarea::placeholder {
 
     #bg {
         background-color: #00000034;
-        height: 130vh;
-        position: absolute;
+        height: 100vh;
+        position: fixed;
         width: 100%;
         z-index: -1;
         transition: all 0.4s linear;
@@ -727,6 +746,7 @@ textarea::placeholder {
         left: -200px;
         transition: all 0.4s ease-in;
         z-index: 3;
+        min-height: 100vh;
     }
 
     .come {
@@ -765,6 +785,7 @@ textarea::placeholder {
         display: flex;
         flex-direction: column-reverse;
         text-align: center;
+        justify-content: start;
     }
 
     #intro div:nth-child(2) img {
@@ -814,7 +835,6 @@ textarea::placeholder {
     text-align: center;
     }
     #intro div:nth-child(2) {
-    padding: 20px;
     margin-left: auto;
     margin-right: auto;
     }
@@ -943,4 +963,11 @@ text-align: center;
     display: block;
     margin-left: 130px;
 }
+#email form input{
+    width: 70%;
+}
+#form p{
+    display: block;
+}
+/* contact ends  */
     }
