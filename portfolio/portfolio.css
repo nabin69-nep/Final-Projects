@@ -253,7 +253,7 @@ nav li a:hover{
 } */
 
 #infos>div:nth-child(2) {
-    margin-left: 5%;
+    margin-left: 11%;
 }
 
 #infos .info {
@@ -592,7 +592,7 @@ textarea::placeholder {
 
     #about .container #some h3 {
         font-size: 20px;
-        margin-top: 50px;
+        margin-top: 20px;
     }
 
     #about .container p {
@@ -600,7 +600,7 @@ textarea::placeholder {
     }
 
     #infos {
-        margin-top: 35px;
+        margin-top: 15px;
         flex-wrap: wrap;
     }
 
@@ -609,7 +609,7 @@ textarea::placeholder {
     }
 
     #infos>div:nth-child(2) {
-        margin-left: 40px;
+        margin-left: 70px;
     }
 
     #infos>div:nth-child(3) {
