@@ -23,7 +23,7 @@ if(!bg==""){
 const btn=document.querySelector("#button");
 if(!btn==""){
     btn.addEventListener("click",()=>{
-        window.location.href="about.html";
+        window.location.href="About.html";
     });
 }
 const btn1=document.querySelector("#btn");

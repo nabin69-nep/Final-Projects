@@ -125,7 +125,9 @@ nav li a:hover{
     font-size: 35px;
     padding: 10px;
 }
-
+#intro div h1{
+    min-height: 130px;
+}
 #intro div p {
     color: white;
     padding: 20px;
@@ -530,7 +532,9 @@ textarea::placeholder {
         width: 250px;
         height: 250px;
     }
-
+    #intro div h1 {
+        min-height: 95px;
+    }
     #intro div h1 span {
         font-size: 31px;
         padding: 5px;
@@ -748,7 +752,9 @@ textarea::placeholder {
         z-index: 3;
         min-height: 100vh;
     }
-
+    #intro div h1{
+        min-height: 0px;
+    }
     .come {
         left: 0;
     }
