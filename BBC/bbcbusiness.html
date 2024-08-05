@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <link rel="shortcut icon" href="title-logo.png" title="x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="bbc.css">
+</head>
+<body>
+  <header class="position-fixed w-100 top-0 bg-white z-index">
+    <div class="pb-2 border-bottom">
+    <div class="container">
+       <div class="row pt-3">
+        <div class="col-lg-2 col-sm-3 col-4">
+            <div>
+                <a data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                    <i class="fa-solid fa-bars fs-3 text-black"></i>
+                  </a>
+                <a data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                    <i class="fa-solid fa-magnifying-glass ms-4 fs-4 text-black "></i>
+                  </a>
+                  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                    <div class="offcanvas-header">
+                      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                      <div class="p-2 bg">
+                      <input type="text" placeholder="Search news,topics and more" class="py-2 px-4  rounded-0"><i class="fa-solid fa-magnifying-glass text-white bg-black cursor-pointer f "></i>
+                      </div>
+                      <div class="ps-1 White">
+                        <a href="bbcmain.html" class="px-3 py-3 mt-4  d-block style border-left border-bottom">Home</a>
+                        
+                        <div class="accordion border-bottom" id="accordionPanelsStayOpenExample ">
+                            <div class="accordion-item border-0">
+                              <h2 class="accordion-header">
+                                <button class="accordion-button style fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                                 News
+                                </button>
+                              </h2>
+                              <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse">
+                                <div class="accordion-body">
+                                <a href="#" class="d-block style fw-normal py-3 ps-4">News</a>
+                                <a href="#" class="d-block style py-3 fw-normal ps-4">Israel-Gaza War</a>
+                                <a href="#" class="d-block style py-3 fw-normal ps-4">War in Ukarine</a>
+                                <a href="#" class="d-block style py-3 fw-normal ps-4">Us Election</a>
+                                <a href="#" class="d-block style py-3 fw-normal ps-4">US & Canada</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <a href="#" class="px-3 py-3  d-block style  border-bottom fw-semibold">Sport</a>
+                          <div class="accordion border-bottom" id="accordionPanelsStayOpenExample ">
+                            <div class="accordion-item border-0">
+                              <h2 class="accordion-header">
+                                <button class="accordion-button style fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapstwo" aria-expanded="true" aria-controls="panelsStayOpen-collapstwo">
+                               Business
+                                </button>
+                              </h2>
+                              <div id="panelsStayOpen-collapstwo" class="accordion-collapse collapse">
+                                <div class="accordion-body">
+                                <a href="bbcbusiness.html" class="d-block style fw-normal py-3 ps-4">Business</a>
+                                <a href="#" class="d-block style py-3 fw-normal ps-4">Executive Lounge</a>
+                                <a href="#" class="d-block style py-3 fw-normal ps-4">Technology of Business</a>
+                                <a href="#" class="d-block style py-3 fw-normal ps-4">Women at the Helm</a>
+                                <a href="#" class="d-block style py-3 fw-normal ps-4">Future of Business</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="accordion border-bottom" id="accordionPanelsStayOpenExample ">
+                            <div class="accordion-item border-0">
+                              <h2 class="accordion-header">
+                                <button class="accordion-button style fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapsefour" aria-expanded="true" aria-controls="panelsStayOpen-collapsefour">
+                                 Innovation
+                                </button>
+                              </h2>
+                              <div id="panelsStayOpen-collapsefour" class="accordion-collapse collapse">
+                                <div class="accordion-body">
+                                <a href="#" class="d-block style fw-normal py-3 ps-4">Innovation</a>
+                                <a href="#" class="d-block style py-3 fw-normal ps-4">Technology</a>
+                                <a href="#" class="d-block style py-3 fw-normal ps-4">Science & Health</a>
+                                <a href="#" class="d-block style py-3 fw-normal ps-4">AI v the Mind</a>
+                                <a href="#" class="d-block style py-3 fw-normal ps-4">Artificial Intelligence</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="accordion border-bottom" id="accordionPanelsStayOpenExample ">
+                            <div class="accordion-item border-0">
+                              <h2 class="accordion-header">
+                                <button class="accordion-button style fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapsefive" aria-expanded="true" aria-controls="panelsStayOpen-collapsefive">
+                                 Culture
+                                </button>
+                              </h2>
+                              <div id="panelsStayOpen-collapsefive" class="accordion-collapse collapse">
+                                <div class="accordion-body">
+                                <a href="#" class="d-block style fw-normal py-3 ps-4">Culture</a>
+                                <a href="#" class="d-block style py-3 fw-normal ps-4">Film & TV</a>
+                                <a href="#" class="d-block style py-3 fw-normal ps-4">Music</a>
+                                <a href="#" class="d-block style py-3 fw-normal ps-4">Art & Design</a>
+                                <a href="#" class="d-block style py-3 fw-normal ps-4">Style</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="accordion border-bottom" id="accordionPanelsStayOpenExample ">
+                            <div class="accordion-item border-0">
+                              <h2 class="accordion-header">
+                                <button class="accordion-button style fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapsesix" aria-expanded="true" aria-controls="panelsStayOpen-collapsesix">
+                                 Travel
+                                </button>
+                              </h2>
+                              <div id="panelsStayOpen-collapsesix" class="accordion-collapse collapse">
+                                <div class="accordion-body">
+                                <a href="#" class="d-block style fw-normal py-3 ps-4">Travel</a>
+                                <a href="#" class="d-block style py-3 fw-normal ps-4">Destination</a>
+                                <a href="#" class="d-block style py-3 fw-normal ps-4">World's Table</a>
+                                <a href="#" class="d-block style py-3 fw-normal ps-4">Culture & Experinces</a>
+                                <a href="#" class="d-block style py-3 fw-normal ps-4">Adventure</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="accordion border-bottom" id="accordionPanelsStayOpenExample ">
+                            <div class="accordion-item border-0">
+                              <h2 class="accordion-header">
+                                <button class="accordion-button style fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseseven" aria-expanded="true" aria-controls="panelsStayOpen-collapseseven">
+                                 Earth
+                                </button>
+                              </h2>
+                              <div id="panelsStayOpen-collapseseven" class="accordion-collapse collapse">
+                                <div class="accordion-body">
+                                <a href="#" class="d-block style fw-normal py-3 ps-4">Earth</a>
+                                <a href="#" class="d-block style py-3 fw-normal ps-4">Natural Wonders</a>
+                                <a href="#" class="d-block style py-3 fw-normal ps-4">Weather & Science</a>
+                                <a href="#" class="d-block style py-3 fw-normal ps-4">Climate Solution</a>
+                                <a href="#" class="d-block style py-3 fw-normal ps-4">Sustainable</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <a href="#" class="px-3 py-3  d-block style  border-bottom fw-semibold">Video</a>
+                          <div class="accordion border-bottom" id="accordionPanelsStayOpenExample ">
+                            <div class="accordion-item border-0">
+                              <h2 class="accordion-header">
+                                <button class="accordion-button style fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapeight" aria-expanded="true" aria-controls="panelsStayOpen-collapeight">
+                                 Live
+                                </button>
+                              </h2>
+                              <div id="panelsStayOpen-collapeight" class="accordion-collapse collapse">
+                                <div class="accordion-body">
+                                <a href="#" class="d-block style fw-normal py-3 ps-4">Live</a>
+                                <a href="#" class="d-block style py-3 fw-normal ps-4">Live News</a>
+                                <a href="#" class="d-block style py-3 fw-normal ps-4">Live Sport</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <a href="#" class="px-3 py-3  d-block style  border-bottom fw-semibold">Audio</a>
+                          <a href="#" class="px-3 py-3  d-block style  border-bottom fw-semibold">Weather</a>
+                          <a href="#" class="px-3 py-3  d-block style  border-bottom fw-semibold">Newsletters</a>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        <div class="col-lg-7 col-sm-4 col-6">
+            <div class="text-center">
+                <img src="media-removebg-preview.png" title="British Broadcasting corporation " alt="logo" class="cursor-pointer w-logo mx-auto">
+            </div>
+        </div>
+        <div class="col-lg-3 col-sm-5 d-flex d-sm-block d-none">
+            <div class="ms-lg-0 ms-sm-4">
+            <a href="#" class="btn bg-black text-white border-0 rounded-0 px-lg-3 px-2 py-1 me-lg-2 me-0 fw-bold">Register</a>
+            <a href="#" class="btn border-0 rounded-0 px-lg-3 px-2 py-1 fw-bold signin ">Sign In</a>
+        </div>
+        </div>
+       </div>
+    </div>
+    </div>
+    <nav class="navbar navbar-expand-sm  d-lg-block d-none">
+                <div class="container-fluid mx-auto text-center border-bottom">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="bbcmain.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">News</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Sport</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link link" href="bbcbusiness.html">Business</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Innovation</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Culture</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Travel</a>
+                      </li>
+                      <li class="nav-item border-end">
+                        <a class="nav-link " href="#">Earth</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Video</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Live</a>
+                      </li>
+                    </ul>
+        </div>
+    </nav>
+</header>
+<main>
+    <section class="some ">
+        <h1 class="fs-2 fw-bold">Business</h1>
+        <div class="pb-5 border-bottom border-top border-black border-2">
+            <div class="row mt-2 pt-2">
+                <div class="col-md-9 col-12 ">
+                    <div class="hover border-bottom">
+                        <div class="row">
+                            <div class="col-md-4 col-12 order-md-1 order-2 d-flex align-items-center">
+                                <div>
+                                <h2 class="fw-semibold fs-3 mt-2">Asia markets slump after global rout last week </h2>
+                        <p>Japn's Nikkei 225 and Topix stock indexes drop as much as 7%, continuing a global seel-off.</p>
+                        <span class="border-end me-2 pe-2">32 mins ago</span> <span>Asia</span>
+                    </div>
+                            </div>
+                            <div class="col-md-8 col-12 order-md-2 order-1">
+                                <img src="https://ichef.bbci.co.uk/news/1024/cpsprodpb/f738/live/10d45960-52cd-11ef-9e4a-853a5d5395ca.jpg.webp" class="img-fluid" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-4 col-6 mt-md-0 mt-4">
+                    <div class="hover border-bottom">
+                        <img src="https://ichef.bbci.co.uk/news/640/cpsprodpb/ad92/live/a3e5dee0-4fe9-11ef-a2b2-651941bfb3ca.jpg.webp" class="img-fluid" alt="">
+                        <h2 class="fw-semibold fs-4 mt-2">Can 24-hour drinking zones transform a city?</h2>
+                        <p>Montreal is planning to allow bars and clubs to stay open all night, but opinions are mixed.
+                            </p>
+                        <span class=" pe-2">
+                            5 hrs ago</span>
+
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-4 col-6 mt-4">
+                    <div class="hover border-bottom">
+                        <img src="https://ichef.bbci.co.uk/news/640/cpsprodpb/421a/live/2e6bc7c0-5100-11ef-9143-61e1b136c8b1.jpg.webp" class="img-fluid" alt="">
+                        <h2 class="fw-semibold fs-5 mt-2">TikTok sued for 'massive' invasion of child privacy</h2>
+                        <p> The US says TikTok obstructed parents trying to cancel their children's accounts.
+                            </p>
+                        <span class=" pe-2">
+                            2 days ago</span>
+
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-4 col-6 mt-4">
+                    <div class="hover border-bottom" id="stock">
+                        <img src="https://ichef.bbci.co.uk/news/640/cpsprodpb/3221/live/9b7eade0-50e8-11ef-bf26-6d9f6165d706.jpg.webp" class="img-fluid" alt="">
+                        <h2 class="fw-semibold fs-5 mt-2">Stock markets plunge as weak US jobs fuel fears</h2>
+                        <p> Worse-than-expected employment data adds to concerns that the US is facing a slowdown.
+                            </p>
+                            <span class="border-end me-2 pe-2">2 days ago</span> <span>Business</span>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-4 col-6 mt-4">
+                    <div class="hover border-bottom">
+                        <img src="https://ichef.bbci.co.uk/news/640/cpsprodpb/f5c1/live/70b192f0-50f5-11ef-8f0f-0577398c3339.jpg.webp" class="img-fluid" alt="">
+                        <h2 class="fw-semibold fs-5 mt-2">Football fans warned over Premier League ticket scams</h2>
+                        <p>Thousands of young people were tricked by football ticket scams last season, Lloyds Bank estimates.</p>
+                            <span class="border-end me-2 pe-2">2 days ago</span> <span>Business</span>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-4 col-12 mt-4">
+                    <div class="hover border-bottom">
+                        <img src="https://ichef.bbci.co.uk/news/640/cpsprodpb/538b/live/d57eadd0-514f-11ef-986a-a10b7a6886df.jpg.webp" class="img-fluid" alt="">
+                        <h2 class="fw-semibold fs-5 mt-2">Maui wildfire victims offered $4bn settlement</h2>
+                        <p>The proposed deal would compensate hundreds of people impacted by last year's deadly blazes.</p>
+                            <span class="border-end me-2 pe-2">2 days ago</span> <span>US & Canada</span>
+                    </div>
+                </div>
+                <div class="col-12 col-md-5 mt-4">
+                    <div class="hover border-bottom">
+                        <h2 class="fw-semibold fs-5 mt-3">Less is more: Can degrowth save the world?</h2>
+                        <p>The degrowth movement questions the feasibility of the idea of endless economic growth on a finite planet.</p>
+                            <span class="border-end me-2 pe-2">2 days ago</span> <span>Business</span>
+                    </div>
+                </div>
+                <div class="col-12 col-md-5 mt-4">
+                    <div class="hover border-bottom">
+                        <h2 class="fw-semibold fs-5 mt-3">Fake caller app shut after thieves duped thousands</h2>
+                        <p>The National Crime Agency says the Russian Coms platform was used by hundreds of criminals.</p>
+                            <span class="border-end me-2 pe-2">3 days ago</span> <span>Business</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="some ">
+        <p class="fw-bold fs-5 d-inline-block mt-3">Featured podcast</p>
+        <div class="row pb-5 border-bottom  border-black border-2">
+          <div class="col-lg-4 col-12 d-flex align-items-center order-lg-1 order-4">
+            <div class="hover">
+              <h2 class="fw-bold fs-3 mt-2"> Good Bad Billionaire</h2>
+              <p>
+                Simon Jack and Zing Tsjeng find out how the world's billionaires made their money, and then judge them. Are they good, bad, or just another billionaire? Listen to season two. New episodes released on Mondays.
+                </p>
+                <button class="btn button fw-semibold border border-2 border-black  rounded-0">See more</button>
+            </div>
+          </div>
+          <div class="col-lg-8 col-12 mt-lg-0 mt-3 order-lg-4 order-1">
+            <div class="hover">
+              <img src="https://ichef.bbci.co.uk/images/ic/raw/p0jg5lfx.jpg.webp" class="img-fluid" alt="">
+            </div>
+          </div>
+        </div>
+        <p class="fw-bold fs-5 d-inline-block mt-3">Executive Lounge ></p>
+        <div class="row pb-2">
+          <div class="col-lg-8 col-12 mt-lg-0 mt-3">
+            <div class="hover">
+              <img src="https://ichef.bbci.co.uk/images/ic/1376x774/p0jdk1b8.jpg.webp" class="img-fluid" alt="">
+            </div>
+          </div>
+          <div class="col-lg-4 col-12 d-flex align-items-center">
+            <div class="hover">
+              <h2 class="fw-bold fs-3 mt-2">Lego's CEO on the business casse for play</h2>
+              <p>
+As digital innovation reshapes the toy market, the BBC's Executive Lounge meets with Lego's Chief Executive, Niels B Christiansen.
+                </p>
+                <button class="btn button fw-semibold border border-2 border-black  rounded-0">See more</button>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-3 py-2 border-bottom border-top border-1 border-black">
+            <a href="#"><img src="https://tpc.googlesyndication.com/simgad/1553422781057094143" alt="" class="img-fluid py-3"></a>
+          </div>
+    </section>
+    <section class="some border-top border-bottom pb-4 border-black border-2">
+      <a href="#" class="fs-5 fw-bold d-inline-block mt-4 text-decoration-none text-black">Influential with katty kay ></a>
+      <div class="row mt-3 pb-5 border-bottom border-black border-2">
+        <div class="col-md-4 col-6">
+          <div class="hover pb-2 border-bottom">
+            <img src="https://ichef.bbci.co.uk/images/ic/480x270/p0jb1cf3.jpg.webp" alt="" class="img-fluid">
+            <h2 class="fw-bold fs-5 mt-2">Aly Raisman on competing at the highest level</h2>
+            <p>The decorated US gymnast opened up to the BBC's Katty Kay about blocking out the noise, trusting her training and her winning mindset.</p>
+            <span class="border-end me-2 pe-2">15 Jul 2024</span> <span>Worklife</span>
+        </div>
+        </div>
+        <div class="col-md-4 col-6">
+          <div class="hover pb-2 border-bottom">
+            <img src="https://ichef.bbci.co.uk/images/ic/480x270/p0j93rq3.jpg.webp" alt="" class="img-fluid">
+            <h2 class="fw-bold fs-5 mt-2">Jackie Joyner-Kersee's gold-medal attitude</h2>
+            <p>The retired athlete and hall-of-famer opened up to the BBC's Katty Kay about the challenges she faced on the road to the Olympics, and the winning mindset that saw her through them.</p>
+            <span class="border-end me-2 pe-2"> 8 Jul 2024</span> <span>Worklife</span>
+        </div>
+        </div>
+        <div class="col-md-4 col-6">
+          <div class="hover pb-2 border-bottom">
+            <img src="https://ichef.bbci.co.uk/images/ic/480x270/p0j84gl4.jpg.webp" alt="" class="img-fluid">
+            <h2 class="fw-bold fs-5 mt-2">Olympic legend Lindsey Vonn explains the mindset of a winner</h2>
+            <p>The decorated US downhill skier opens up to Katty Kay about the mental state that led her to gold medal victory and the "hole" that's left when her mind isn't on winning anymore.<p>
+            <span class="border-end me-2 pe-2">1 Jul 2024</span> <span>Worklife</span>
+        </div>
+        </div>
+      </div>
+      <p class="fs-5 fw-bold mt-3">More news</p>
+      <div class="row mt-2">
+        <div class="col-lg-4 col-sm-6 col-12">
+          <div class="hover">
+            <img src="https://ichef.bbci.co.uk/news/480/cpsprodpb/7e37/live/ee33e080-50b3-11ef-9462-ef4aa241f684.jpg.webp" alt="" class="img-fluid">
+            <h2 class="fw-bold fs-5 mt-2">Intel axes 15,000 jobs after sales tumble</h2>
+            <p>Shares in the company fall as much as 20%, contributing to a sharp fall in global stock markets.</p>
+            <span class="border-end me-2 pe-2">3 days ago</span> <span>Business</span>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 col-12">
+          <div class="hover">
+            <img src="https://ichef.bbci.co.uk/news/1024/cpsprodpb/fbf2/live/b5344220-5063-11ef-b826-d75b6a9c2723.jpg.webp" alt="" class="img-fluid">
+            <h2 class="fw-bold fs-5 mt-2">Ex-CNN star Don Lemon sues Elon Musk over cancelled X show</h2>
+            <p>The lawsuit alleges the multi-billionaire unfairly terminated a partnership with the celebrity presenter.</p>
+            <span class="me-2 pe-2">3 days ago</span>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 col-12">
+          <div class="hover">
+            <img src="https://ichef.bbci.co.uk/news/480/cpsprodpb/b3c0/live/172e54f0-50c0-11ef-b2d2-cdb23d5d7c5b.jpg.webp" alt="" class="img-fluid">
+            <h2 class="fw-bold fs-5 mt-2">Nigerians hit with 24-hour curfews amid protests</h2>
+            <p>Millions in the north have been ordered to stay indoors as nationwide anti-government protests continue.</p>
+            <span class="border-end me-2 pe-2">3 days ago</span> <span>Africa</span>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 col-12 mt-3">
+          <div class="hover">
+            <img src="https://ichef.bbci.co.uk/news/480/cpsprodpb/d52a/live/92ddef90-4f24-11ef-8f0f-0577398c3339.png.webp" alt="" class="img-fluid">
+            <h2 class="fw-bold fs-5 mt-2">Salon owner 'exhausted' by legal battle with L'Oréal</h2>
+            <p>Rebecca Dowdeswell says L'Oréal's objection to a trademark application has cost her two years and £30,000.</p>
+            <span class="border-end me-2 pe-2">3 days ago</span> <span>Leicester</span>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 col-12 mt-3">
+          <div class="hover">
+            <img src="https://ichef.bbci.co.uk/news/480/cpsprodpb/9bdd/live/d6232230-4f41-11ef-9c78-9984104dc6ca.jpg.webp" alt="" class="img-fluid">
+            <h2 class="fw-bold fs-5 mt-2">Me-ow! Kenyan feline lovers fret over cat-tax plan</h2>
+            <p>Cat owners may need to get a licence, ensure their pet is vaccinated - and "won't disturb the peace".</p>
+            <span class="border-end me-2 pe-2">3 days ago</span> <span>Leicester</span>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 col-12 mt-3">
+          <div class="hover">
+            <img src="https://ichef.bbci.co.uk/news/480/cpsprodpb/9bdd/live/d6232230-4f41-11ef-9c78-9984104dc6ca.jpg.webp" alt="" class="img-fluid">
+            <h2 class="fw-bold fs-5 mt-2">'Living wage means I have a life outside of work'</h2>
+            <p>Northern Ireland lags behind other parts of the UK when it comes to employers paying the Real Living Wage.</p>
+            <span class="border-end me-2 pe-2">3 days ago</span> <span>Northern Ireland</span>
+          </div>
+        </div>
+      </div>
+    </section>
+</main>
+ <footer class="mt-5">
+  <div class="some mt-4">
+    <img src="media-removebg-preview.png" alt="" class="w-logo ms-sm-3">
+    <div class="d-flex flex-sm-row flex-column align-items-start flex-wrap mt-3 pb-2">
+      <a href="#" class="text-decoration-none text-black  w-auto fw-semibold footer ms-sm-3 ms-0 ">Home</a>
+      <a href="#" class="text-decoration-none text-black  w-auto fw-semibold footer ms-sm-3 ms-0">News</a>
+      <a href="#" class="text-decoration-none text-black  w-auto fw-semibold footer ms-sm-3 ms-0">Sport</a>
+      <a href="#" class="text-decoration-none text-black  w-auto fw-semibold footer ms-sm-3 ms-0">Business</a>
+      <a href="#" class="text-decoration-none text-black  w-auto fw-semibold footer ms-sm-3 ms-0">Innovation</a>
+      <a href="#" class="text-decoration-none text-black  w-auto fw-semibold footer ms-sm-3 ms-0">Culture</a>
+      <a href="#" class="text-decoration-none text-black  w-auto fw-semibold footer ms-sm-3 ms-0">Travel</a>
+      <a href="#" class="text-decoration-none text-black  w-auto fw-semibold footer ms-sm-3 ms-0">Earth</a>
+      <a href="#" class="text-decoration-none text-black  w-auto fw-semibold footer ms-sm-3 ms-0">Video</a>
+      <a href="#" class="text-decoration-none text-black  w-auto fw-semibold footer ms-sm-3 ms-0">Live</a>
+      <a href="#" class="text-decoration-none text-black  w-auto fw-semibold footer ms-sm-3 ms-0">Audio</a>
+      <a href="#" class="text-decoration-none text-black  w-auto fw-semibold footer ms-sm-3 ms-0">Weather</a>
+      <a href="#" class="text-decoration-none text-black  w-auto fw-semibold footer ms-sm-3 ms-0">BBC Shop</a>
+    </div>
+    <div class="dropdown mt-3 border-bottom pb-2 ms-sm-3">
+      <a class="btn rounded-0 btn-secondary  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+       BBC in other languages
+      </a>
+    
+      <ul class="dropdown-menu p-0">
+        <li><a class="dropdown-item bg-secondary text-white" href="#">Oduu Afaan Oromootiin</a></li>
+        <li><a class="dropdown-item bg-secondary text-white" href="#">Amharic ዜና በአማርኛ</a></li>
+        <li><a class="dropdown-item bg-secondary text-white" href="#">Arabic عربي</a></li>
+        <li><a class="dropdown-item bg-secondary text-white" href="#">Nepali नेपाली</a></li>
+        <li><a class="dropdown-item bg-secondary text-white" href="#">Hindi हिन्दी</a></li>
+      </ul>
+    </div>
+    <div class="row mt-3">
+      <div class="col-sm-2 col-12">
+        <div>
+          <h2 class="fs-5 ms-sm-3">Follow BBC on:</h2>
+        </div>
+      </div>
+      <div class="col-sm-10 col-12">
+        <i class="fa-brands fa-x-twitter footer-link px-sm-2 px-0 py-1 mt-1 fs-5" ></i>
+        <i class="fa-brands fa-facebook-f ms-3  footer-link px-2 py-1 mt-1  fs-5"></i>
+        <i class="fa-brands fa-instagram ms-3   footer-link px-2 py-1 mt-1  fs-5"></i>
+        <i class="fa-brands fa-tiktok ms-3   footer-link px-2 py-1 mt-1  fs-5"></i>
+        <i class="fa-brands fa-linkedin-in ms-3   footer-link px-2 py-1 mt-1  fs-5"></i>
+        <i class="fa-brands fa-youtube ms-3   footer-link px-2 py-1 mt-1  fs-5"></i>
+      </div>
+    </div>
+    <div class="d-flex  flex-wrap ms-0">
+      <a href="#" class="text-decoration-none text-black footer-font mt-2 ms-3 footer-last">Terms of Use</a>
+      <a href="#" class="text-decoration-none text-black footer-font mt-2 ms-3 footer-last">About the BBC</a>
+      <a href="#" class="text-decoration-none text-black footer-font mt-2 ms-3 footer-last">Privacy Policy</a>
+      <a href="#" class="text-decoration-none text-black footer-font mt-2 ms-3 footer-last">Cookies</a>
+      <a href="#" class="text-decoration-none text-black footer-font mt-2 ms-3 footer-last">Accessibility Help</a>
+      <a href="#" class="text-decoration-none text-black footer-font mt-2 ms-3 footer-last">Contact the BBC</a>
+      <a href="#" class="text-decoration-none text-black footer-font mt-2 ms-3 footer-last">Advertise with us</a>
+      <a href="#" class="text-decoration-none text-black footer-font mt-2 ms-3 footer-last">Do not share or sell my info</a>
+      <a href="#" class="text-decoration-none text-black footer-font mt-2 ms-3 footer-last">Contact technical support</a>
+    </div>
+    <p class="footer-font ms-sm-3 mt-2"><i>Copyright 2024 BBC. All rights reserved.  The BBC is not responsible for the content of external sites.</i><a href="#" class="text-decoration-none text-black fw-bold ms-1"><strong></strong>Read about our approach to external linking.
+
+    </a></p>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="bbc.js"></script>
+</body>
+</html>

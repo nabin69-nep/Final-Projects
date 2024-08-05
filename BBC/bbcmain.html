@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <link rel="shortcut icon" href="title-logo.png" title="x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="bbc.css">
+</head>
+<body>
+<header class="position-fixed w-100 top-0 bg-white z-index">
+    <div class="pb-2 border-bottom">
+    <div class="container">
+       <div class="row pt-3">
+        <div class="col-lg-2 col-sm-3 col-4">
+            <div>
+                <a data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                    <i class="fa-solid fa-bars fs-3 text-black"></i>
+                  </a>
+                <a data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                    <i class="fa-solid fa-magnifying-glass ms-4 fs-4 text-black "></i>
+                  </a>
+                  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                    <div class="offcanvas-header">
+                      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                      <div class="p-2 bg">
+                      <input type="text" placeholder="Search news,topics and more" class="py-2 px-4  rounded-0"><i class="fa-solid fa-magnifying-glass text-white bg-black cursor-pointer f "></i>
+                      </div>
+                      <div class="ps-1 White">
+                        <a href="bbcmain.html" class="px-3 py-3 mt-4  d-block style border-left border-bottom">Home</a>
+                        
+                        <div class="accordion border-bottom" id="accordionPanelsStayOpenExample ">
+                            <div class="accordion-item border-0">
+                              <h2 class="accordion-header">
+                                <button class="accordion-button style fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                                 News
+                                </button>
+                              </h2>
+                              <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse">
+                                <div class="accordion-body">
+                                <a href="#" class="d-block style fw-normal py-3 ps-4">News</a>
+                                <a href="#" class="d-block style py-3 fw-normal ps-4">Israel-Gaza War</a>
+                                <a href="#" class="d-block style py-3 fw-normal ps-4">War in Ukarine</a>
+                                <a href="#" class="d-block style py-3 fw-normal ps-4">Us Election</a>
+                                <a href="#" class="d-block style py-3 fw-normal ps-4">US & Canada</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <a href="#" class="px-3 py-3  d-block style  border-bottom fw-semibold">Sport</a>
+                          <div class="accordion border-bottom" id="accordionPanelsStayOpenExample ">
+                            <div class="accordion-item border-0">
+                              <h2 class="accordion-header">
+                                <button class="accordion-button style fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapstwo" aria-expanded="true" aria-controls="panelsStayOpen-collapstwo">
+                               Business
+                                </button>
+                              </h2>
+                              <div id="panelsStayOpen-collapstwo" class="accordion-collapse collapse">
+                                <div class="accordion-body">
+                                <a href="bbcbusiness.html" class="d-block style fw-normal py-3 ps-4">Business</a>
+                                <a href="#" class="d-block style py-3 fw-normal ps-4">Executive Lounge</a>
+                                <a href="#" class="d-block style py-3 fw-normal ps-4">Technology of Business</a>
+                                <a href="#" class="d-block style py-3 fw-normal ps-4">Women at the Helm</a>
+                                <a href="#" class="d-block style py-3 fw-normal ps-4">Future of Business</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="accordion border-bottom" id="accordionPanelsStayOpenExample ">
+                            <div class="accordion-item border-0">
+                              <h2 class="accordion-header">
+                                <button class="accordion-button style fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapsefour" aria-expanded="true" aria-controls="panelsStayOpen-collapsefour">
+                                 Innovation
+                                </button>
+                              </h2>
+                              <div id="panelsStayOpen-collapsefour" class="accordion-collapse collapse">
+                                <div class="accordion-body">
+                                <a href="#" class="d-block style fw-normal py-3 ps-4">Innovation</a>
+                                <a href="#" class="d-block style py-3 fw-normal ps-4">Technology</a>
+                                <a href="#" class="d-block style py-3 fw-normal ps-4">Science & Health</a>
+                                <a href="#" class="d-block style py-3 fw-normal ps-4">AI v the Mind</a>
+                                <a href="#" class="d-block style py-3 fw-normal ps-4">Artificial Intelligence</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="accordion border-bottom" id="accordionPanelsStayOpenExample ">
+                            <div class="accordion-item border-0">
+                              <h2 class="accordion-header">
+                                <button class="accordion-button style fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapsefive" aria-expanded="true" aria-controls="panelsStayOpen-collapsefive">
+                                 Culture
+                                </button>
+                              </h2>
+                              <div id="panelsStayOpen-collapsefive" class="accordion-collapse collapse">
+                                <div class="accordion-body">
+                                <a href="#" class="d-block style fw-normal py-3 ps-4">Culture</a>
+                                <a href="#" class="d-block style py-3 fw-normal ps-4">Film & TV</a>
+                                <a href="#" class="d-block style py-3 fw-normal ps-4">Music</a>
+                                <a href="#" class="d-block style py-3 fw-normal ps-4">Art & Design</a>
+                                <a href="#" class="d-block style py-3 fw-normal ps-4">Style</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="accordion border-bottom" id="accordionPanelsStayOpenExample ">
+                            <div class="accordion-item border-0">
+                              <h2 class="accordion-header">
+                                <button class="accordion-button style fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapsesix" aria-expanded="true" aria-controls="panelsStayOpen-collapsesix">
+                                 Travel
+                                </button>
+                              </h2>
+                              <div id="panelsStayOpen-collapsesix" class="accordion-collapse collapse">
+                                <div class="accordion-body">
+                                <a href="#" class="d-block style fw-normal py-3 ps-4">Travel</a>
+                                <a href="#" class="d-block style py-3 fw-normal ps-4">Destination</a>
+                                <a href="#" class="d-block style py-3 fw-normal ps-4">World's Table</a>
+                                <a href="#" class="d-block style py-3 fw-normal ps-4">Culture & Experinces</a>
+                                <a href="#" class="d-block style py-3 fw-normal ps-4">Adventure</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="accordion border-bottom" id="accordionPanelsStayOpenExample ">
+                            <div class="accordion-item border-0">
+                              <h2 class="accordion-header">
+                                <button class="accordion-button style fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseseven" aria-expanded="true" aria-controls="panelsStayOpen-collapseseven">
+                                 Earth
+                                </button>
+                              </h2>
+                              <div id="panelsStayOpen-collapseseven" class="accordion-collapse collapse">
+                                <div class="accordion-body">
+                                <a href="#" class="d-block style fw-normal py-3 ps-4">Earth</a>
+                                <a href="#" class="d-block style py-3 fw-normal ps-4">Natural Wonders</a>
+                                <a href="#" class="d-block style py-3 fw-normal ps-4">Weather & Science</a>
+                                <a href="#" class="d-block style py-3 fw-normal ps-4">Climate Solution</a>
+                                <a href="#" class="d-block style py-3 fw-normal ps-4">Sustainable</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <a href="#" class="px-3 py-3  d-block style  border-bottom fw-semibold">Video</a>
+                          <div class="accordion border-bottom" id="accordionPanelsStayOpenExample ">
+                            <div class="accordion-item border-0">
+                              <h2 class="accordion-header">
+                                <button class="accordion-button style fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapeight" aria-expanded="true" aria-controls="panelsStayOpen-collapeight">
+                                 Live
+                                </button>
+                              </h2>
+                              <div id="panelsStayOpen-collapeight" class="accordion-collapse collapse">
+                                <div class="accordion-body">
+                                <a href="#" class="d-block style fw-normal py-3 ps-4">Live</a>
+                                <a href="#" class="d-block style py-3 fw-normal ps-4">Live News</a>
+                                <a href="#" class="d-block style py-3 fw-normal ps-4">Live Sport</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <a href="#" class="px-3 py-3  d-block style  border-bottom fw-semibold">Audio</a>
+                          <a href="#" class="px-3 py-3  d-block style  border-bottom fw-semibold">Weather</a>
+                          <a href="#" class="px-3 py-3  d-block style  border-bottom fw-semibold">Newsletters</a>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        <div class="col-lg-7 col-sm-4 col-6">
+            <div class="text-center">
+                <img src="media-removebg-preview.png" title="British Broadcasting corporation " alt="logo" class="cursor-pointer w-logo mx-auto">
+            </div>
+        </div>
+        <div class="col-lg-3 col-sm-5 d-flex d-sm-block d-none">
+            <div class="ms-lg-0 ms-sm-4">
+            <a href="#" class="btn bg-black text-white border-0 rounded-0 px-lg-3 px-2 py-1 me-lg-2 me-0 fw-bold">Register</a>
+            <a href="#" class="btn border-0 rounded-0 px-lg-3 px-2 py-1 fw-bold signin ">Sign In</a>
+        </div>
+        </div>
+       </div>
+    </div>
+    </div>
+    <nav class="navbar navbar-expand-sm  d-lg-block d-none">
+                <div class="container-fluid mx-auto text-center border-bottom">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link link" aria-current="page" href="bbcmain.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">News</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Sport</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="bbcbusiness.html">Business</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Innovation</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Culture</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Travel</a>
+                      </li>
+                      <li class="nav-item border-end">
+                        <a class="nav-link " href="#">Earth</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Video</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Live</a>
+                      </li>
+                    </ul>
+        </div>
+    </nav>
+</header>
+<main>
+    <section class="some pb-5 border-bottom border-black border-2">
+            <div class="row">
+                <div class="col-lg-3 col-md-4 col-12 order-md-1 order-2 ">
+                    <div>
+                        <div class="row">
+                            <div class="col-12 border-bottom ">
+                                <div class="hover pb-2 mt-md-0 mt-5">
+                                  <div class="row">
+                                    <div class="col-md-12 col-4"><img src="https://ichef.bbci.co.uk/news/1536/cpsprodpb/eb79/live/10ee4020-4f42-11ef-aebc-6de4d31bf5cd.jpg.webp" alt="" class="img-fluid"></div>
+                                    <div class="col-md-12 col-8">
+                                      <h2 class="fs-5 fw-bold mt-2">'They're tightening the screws': Kremlin ups attacks on critics abroad</h2>
+                                    </div>
+                                    <div class="col-md-12 col-6 offset-md-0 offset-4 ">
+                                      <p class="d-md-block d-none">With dissent snuffed out at home, Russia intensifies attacks on opponents seeking refuge in the West.11 hrs ago Europe.</p>
+                                      <span class="border-end me-2 pe-2">11 hrs ago</span><span>Europe</span>
+                                    </div>
+                                  </div>
+                                  
+                                </div>
+                            </div>
+                            <div class="col-12 border-bottom ">
+                                <div class="hover pb-2 mt-md-3 mt-5">
+                                  <div class="row">
+                                    <div class="col-md-12 col-4"><img src="https://ichef.bbci.co.uk/news/1536/cpsprodpb/33b3/live/1e8d4be0-51bd-11ef-b2d2-cdb23d5d7c5b.jpg.webp" alt="" class="img-fluid"></div>
+                                    <div class="col-md-12 col-8">
+                                      <h2 class="fs-5 fw-bold mt-2">Trump and Harris at odds over presidential debate</h2>
+                                    </div>
+                                    <div class="col-md-12 col-6 offset-md-0 offset-4 ">
+                                      <p class="d-md-block d-none">The two candidate trade barbs as broadcasters negotiate details of new debates ahead of November election.</p>
+                                      <span class="border-end me-2 pe-2">18 hrs ago</span> <span>US & Canada</span>
+                                    </div>
+                                  </div>
+                                  
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-8 col-12 order-md-2 order-1">
+                    <div class="hover">
+                        <img src="https://ichef.bbci.co.uk/news/1536/cpsprodpb/f57b/live/59a896c0-51eb-11ef-b2d2-cdb23d5d7c5b.jpg.webp" alt="" class="img-fluid">
+                        <h2 class="fw-bold fs-3 mt-2">Countries urge nationals to leave Lebanon as mid-East  war fears grow </h2>
+                        <p>Fears grow that Iran may attack Israel after high-profile assassinations, with Hezbollah in Lebanon joining.</p>
+                        <span class="border-end me-2 pe-2">1 hrs ago</span> <span>Middle East</span>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-12 mt-lg-0 mt-5 order-3">
+                    <div>
+                        <div class="row">
+                            <div class="col-lg-12  col-md-6 col-12">
+                                <div class="hover border-lg-bottom pb-2 border-bottom">
+                                <h2 class="fs-5 fw-bold mt-2">Police called to save cat with jar stuck on head </h2>                                   
+                                    <p> Police officers in Texas jumped into action when they received an unusual call.</p>
+                                    <span class="border-end me-2 pe-2">4 hrs ago</span> <span>US & Canada</span>
+                                </div>
+                            </div>
+                            <div class="col-lg-12  col-md-6 col-12">
+                                <div class="hover border-lg-bottom pb-2 border-bottom">
+                                <h2 class="fs-5 fw-bold mt-2">Olympics: Djokovic v Alcaraz after GB's Fry wins equestrian bronze</h2>                                   
+                                    <p>Great Britain target more medals in shooting, gymnastics and golf on day nine of the Olympic Games in Paris.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-12  col-md-6 col-12">
+                                <div class="hover border-lg-bottom pb-2 border-bottom">
+                                <h2 class="fs-5 fw-bold mt-2">World's biggest iceberg spins in ocean trap</h2>                                   
+                                    <p>A frozen block of ice far bigger than Greater London is captured in a vast pool of rotating water</p>
+                                    <span class="border-end me-2 pe-2">14 hrs ago</span> <span>Science and Environment</span>
+                                </div>
+                            </div>
+                            <div class="col-lg-12  col-md-6 col-12">
+                                <div class="hover pb-2">
+                                <h2 class="fs-5 fw-bold mt-2">'They're tightening the screws': Kremlin ups attacks on critics abroad
+                                </h2>                                   
+                                    <p>With dissent snuffed out at home, Russia intensifies attacks on opponents seeking refuge in the West.</p>
+                                    <span class="border-end me-2 pe-2">12 hrs ago</span> <span>Europe</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section class="mt-3 some pb-4 border-bottom border-black border-2">
+      <h2 class="fw-bold fs-5">Only from the BBC</h2>
+      <div class="row mt-4 ">
+        <div class="col-sm-6 col-12">
+            <div class="hover pb-2 border-bottom">
+                <img src="https://ichef.bbci.co.uk/images/ic/1920x1080/p0jg3p48.jpg.webp" alt="" class="img-fluid">
+                <h2 class="fw-bold fs-5 mt-2">Why Lyme disease can be so hard to diagnose </h2>
+                <p>Climate change is contributing to the global rise of Lyme disease. But many physicians are struggling to recognise its symptoms.</p>
+                <span class="border-end me-2 pe-2">1 day ago</span> <span>Future</span>
+            </div>
+        </div>
+        <div class="col-sm-6 col-12">
+          <div class="hover border-bottom pb-2">
+              <img src="https://ichef.bbci.co.uk/images/ic/1920x1080/p0jfxgkq.jpg.webp" alt="" class="img-fluid">
+              <h2 class="fw-bold fs-5 mt-2">"The most cynical show on TV' </h2>
+              <p>Set in the cutthorat world of UK high finance,Industry is a Gen-Z Succession that's as ruthless as it is entertaining.</p>
+              <span class="border-end me-2 pe-2">2 day ago</span> <span>Culture</span>
+          </div>
+      </div>
+      </div>
+      <div class="row">
+        <div class="col-12  text-center">
+          <div>
+          <a href="#"><img src="https://tpc.googlesyndication.com/simgad/8298434783375530583" alt="" class="img-fluid py-3"></a>
+        </div>
+        </div>
+      </div>
+    </section>
+    <section class="some pb-4 border-bottom border-black border-2">
+      <a href="#" class="text-decoration-none text-black fw-bold fs-4 d-inline-block mt-3">Paris 2024 ></a>
+      <div class="row pb-2">
+        <div class="col-lg-4 col-12 d-flex align-items-center order-lg-1 order-4">
+          <div class="hover">
+            <h2 class="fw-bold fs-3 mt-2">'Marchand-mania' inspires French unity-but for how long?</h2>
+            <p>The French swimmer's medals have helped distract the nation from its political crisis, Parisians say.
+              </p>
+              <button class="btn button fw-semibold border border-2 border-black  rounded-0">See more</button>
+          </div>
+        </div>
+        <div class="col-lg-8 col-12 mt-lg-0 mt-3 order-lg-4 order-1">
+          <div class="hover">
+            <img src="https://ichef.bbci.co.uk/news/1024/cpsprodpb/21c2/live/2df743a0-5277-11ef-8f0f-0577398c3339.jpg.webp" class="img-fluid" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col-lg-3 col-sm-6 col-12">
+          <div class="hover">
+            <h2 class="fw-bold fs-5 mt-2">Ngamba guarantees refugee team first Olympic medal </h2>
+            <span class="border-end me-2 pe-2">Just now</span> <span>Olympic Games</span>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 col-12">
+          <div class="hover">
+            <h2 class="fw-bold fs-5 mt-2">Belgium out of triathlon relay as athlete falls ill</h2>
+            <span class="border-end me-2 pe-2">21 mins ago</span> <span>Olympic Games</span>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 col-12">
+          <div class="hover">
+            <h2 class="fw-bold fs-5 mt-2">GB's Fleetwood pipped to Olympic gold by Scheffler </h2>
+            <span class="border-end me-2 pe-2">1 hr ago</span> <span>Olympic Games</span>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 col-12">
+          <div class="hover">
+            <h2 class="fw-bold fs-5 mt-2">Wiffen third in 1500m final for second Olympic medal </h2>
+            <span class="border-end me-2 pe-2">1 hr ago</span> <span>Olympic Games</span>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-3 py-2 border-bottom border-top border-1 border-black">
+        <a href="#"><img src="https://tpc.googlesyndication.com/simgad/1553422781057094143" alt="" class="img-fluid py-3"></a>
+      </div>
+    </section>
+</main>
+ <footer>
+  <div class="some mt-4">
+    <img src="media-removebg-preview.png" alt="" class="w-logo ms-sm-3">
+    <div class="d-flex flex-sm-row flex-column align-items-start flex-wrap mt-3 pb-2">
+      <a href="#" class="text-decoration-none text-black fw-semibold footer ms-sm-3 ms-0 ">Home</a>
+      <a href="#" class="text-decoration-none text-black fw-semibold footer ms-sm-3 ms-0">News</a>
+      <a href="#" class="text-decoration-none text-black fw-semibold footer ms-sm-3 ms-0">Sport</a>
+      <a href="#" class="text-decoration-none text-black fw-semibold footer ms-sm-3 ms-0">Business</a>
+      <a href="#" class="text-decoration-none text-black fw-semibold footer ms-sm-3 ms-0">Innovation</a>
+      <a href="#" class="text-decoration-none text-black fw-semibold footer ms-sm-3 ms-0">Culture</a>
+      <a href="#" class="text-decoration-none text-black fw-semibold footer ms-sm-3 ms-0">Travel</a>
+      <a href="#" class="text-decoration-none text-black fw-semibold footer ms-sm-3 ms-0">Earth</a>
+      <a href="#" class="text-decoration-none text-black fw-semibold footer ms-sm-3 ms-0">Video</a>
+      <a href="#" class="text-decoration-none text-black fw-semibold footer ms-sm-3 ms-0">Live</a>
+      <a href="#" class="text-decoration-none text-black fw-semibold footer ms-sm-3 ms-0">Audio</a>
+      <a href="#" class="text-decoration-none text-black fw-semibold footer ms-sm-3 ms-0">Weather</a>
+      <a href="#" class="text-decoration-none text-black fw-semibold footer ms-sm-3 ms-0">BBC Shop</a>
+    </div>
+    <div class="dropdown mt-3 border-bottom pb-2 ms-sm-3">
+      <a class="btn rounded-0 btn-secondary  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+       BBC in other languages
+      </a>
+    
+      <ul class="dropdown-menu p-0">
+        <li><a class="dropdown-item bg-secondary text-white" href="#">Oduu Afaan Oromootiin</a></li>
+        <li><a class="dropdown-item bg-secondary text-white" href="#">Amharic ዜና በአማርኛ</a></li>
+        <li><a class="dropdown-item bg-secondary text-white" href="#">Arabic عربي</a></li>
+        <li><a class="dropdown-item bg-secondary text-white" href="#">Nepali नेपाली</a></li>
+        <li><a class="dropdown-item bg-secondary text-white" href="#">Hindi हिन्दी</a></li>
+      </ul>
+    </div>
+    <div class="row mt-3">
+      <div class="col-sm-2 col-12">
+        <div>
+          <h2 class="fs-5 ms-sm-3">Follow BBC on:</h2>
+        </div>
+      </div>
+      <div class="col-sm-10 col-12">
+        <i class="fa-brands fa-x-twitter footer-link px-sm-2 px-0 py-1 mt-1 fs-5" ></i>
+        <i class="fa-brands fa-facebook-f ms-3  footer-link px-2 py-1 mt-1  fs-5"></i>
+        <i class="fa-brands fa-instagram ms-3   footer-link px-2 py-1 mt-1  fs-5"></i>
+        <i class="fa-brands fa-tiktok ms-3   footer-link px-2 py-1 mt-1  fs-5"></i>
+        <i class="fa-brands fa-linkedin-in ms-3   footer-link px-2 py-1 mt-1  fs-5"></i>
+        <i class="fa-brands fa-youtube ms-3   footer-link px-2 py-1 mt-1  fs-5"></i>
+      </div>
+    </div>
+    <div class="d-flex  flex-wrap  ms-0">
+      <a href="#" class="text-decoration-none text-black footer-font mt-2 ms-3 footer-last">Terms of Use</a>
+      <a href="#" class="text-decoration-none text-black footer-font mt-2 ms-3 footer-last">About the BBC</a>
+      <a href="#" class="text-decoration-none text-black footer-font mt-2 ms-3 footer-last">Privacy Policy</a>
+      <a href="#" class="text-decoration-none text-black footer-font mt-2 ms-3 footer-last">Cookies</a>
+      <a href="#" class="text-decoration-none text-black footer-font mt-2 ms-3 footer-last">Accessibility Help</a>
+      <a href="#" class="text-decoration-none text-black footer-font mt-2 ms-3 footer-last">Contact the BBC</a>
+      <a href="#" class="text-decoration-none text-black footer-font mt-2 ms-3 footer-last">Advertise with us</a>
+      <a href="#" class="text-decoration-none text-black footer-font mt-2 ms-3 footer-last">Do not share or sell my info</a>
+      <a href="#" class="text-decoration-none text-black footer-font mt-2 ms-3 footer-last">Contact technical support</a>
+    </div>
+    <p class="footer-font ms-sm-3 mt-2"><i>Copyright 2024 BBC. All rights reserved.  The BBC is not responsible for the content of external sites.</i><a href="#" class="text-decoration-none text-black fw-bold ms-1"><strong></strong>Read about our approach to external linking.
+
+    </a></p>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="bbc.js"></script>
+</body>
+</html>

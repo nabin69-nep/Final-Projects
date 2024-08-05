@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://db.onlinewebfonts.com/c/92d9892fa0ef64406bf151c8f730eff2?family=BBC+Reith+Serif');
+.cursor-pointer{
+    cursor: pointer;
+}
+header{
+    font-family: poppins,sans-serif;
+}
+.w-logo{
+    width: 100px;
+}
+header .btn{
+    vertical-align: baseline;
+}
+.signin{
+    color: rgb(59, 57, 57);
+}
+.signin:hover{
+    background-color: rgb(59, 57, 57);
+    color: white;
+}
+.nav-item:hover{
+    background-color: rgba(227, 225, 225, 0.61);
+    border-bottom: 3px solid black;
+}
+.nav-link.link{
+    font-weight: bold;
+    color: black;
+    border-bottom: 3px solid black;
+}
+.nav-link{
+    color: rgb(0, 0, 0) !important;
+}
+.navbar {
+    --bs-navbar-padding-y: 0rem;
+}
+.offcanvas{
+    width: 330px !important;
+}
+.f{
+    vertical-align: top;
+    padding: 14px;
+    margin-left: -1px;
+}
+.bg{
+    background-color: #f6f6f6;
+}
+.offcanvas-body{
+    padding: 0;
+}
+.style{
+    font-weight: bold;
+    color:black;
+    text-decoration: none;
+}
+.style:hover{
+    background-color: #f6f6f6;
+
+}
+.border-left{
+border-left: 6px solid black;
+}
+.accordion-body {
+    padding: 0;
+}
+.accordion-button:focus {
+    box-shadow: none;
+}
+.accordion-button:not(.collapsed) {
+    background-color: white;
+    box-shadow:none;
+}
+main{
+    margin-top: 110px;
+    font-family: "BBC Reith Serif";
+}
+main p{
+    font-size: 14px;
+    margin: 0 !important;
+}
+main span{
+    font-size: 12px;
+}
+.some{
+    width: 95%;
+    margin: 0px auto; 
+}
+.accordion-button:not(.collapsed){
+    color: black;
+}
+.z-index{
+    z-index: 100000;
+}
+.hover{
+    cursor:pointer;
+}
+.hover:hover h2{
+    text-decoration: underline;
+}
+.share{
+    font-size: 14px;
+}
+.span-share{
+    font-size: 16px;
+}
+.hover:hover img{
+opacity: 0.8;
+}
+.button:hover{
+    color: white;
+    background-color: rgb(70, 69, 69);
+}
+.stock-para-fz{
+    font-size: 18px;
+}
+.footer{
+    border-bottom: 2px solid transparent;
+    font-family: poppins,sans-serif !important;
+}
+.footer:hover{
+border-bottom: 2px solid black;
+}
+.footer-link{
+    border: 1px solid transparent;
+}
+.footer-link:hover{
+    border: 1px solid black;
+}
+.footer-last{
+    border-bottom: 1px solid transparent;
+}
+.footer-font{
+    font-size: 12px;
+}
+.footer-last:hover{
+    border-bottom: 1px solid black;
+}
+.done{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.btn-stock{
+    background-color: rgba(217, 215, 215, 0.737);
+}
+.btn-stock:hover{
+    background-color: rgb(69, 67, 67);
+    color: rgb(255, 255, 255);
+}
+@media (min-width:768px)and (max-width:991px){
+    main{
+        margin-top: 75px;
+    }
+    .stock-para-fz{
+        font-size: 16px;
+    }
+    .done{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media (max-width:768px){
+    main{
+        margin-top: 75px;
+    }
+    .span-share{
+        font-size: 13px;
+    }
+    h1{
+        font-size: 24px !important;
+    }
+    h2{
+        font-size: 16px !important;
+    }
+    h3{
+        font-size: 14px !important;
+    }
+    .done{
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    p{
+        font-size: 12px !important;
+    }
+    .stock-para-fz{
+        font-size: 16px;
+    }
+}
