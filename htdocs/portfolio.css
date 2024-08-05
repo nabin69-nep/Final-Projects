@@ -785,6 +785,10 @@ textarea::placeholder {
     }
 
     /* main start  */
+    #intro div h1{
+        min-height: 75px;
+        padding: 0;
+    }
     #intro {
         padding-left: 0;
         padding-top: 20px;
